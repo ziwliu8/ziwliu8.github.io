@@ -8,9 +8,11 @@ He is an incoming PhD student at the School of Data Science, City University of 
 ziwliu8[at]gmail.com
 
 #### Education
+
+Ph.D., Data Science, City University of Hong Kong, Incoming.\
 M.E., Data Science, City University of Hong Kong, 2023—2024.\
 B.E., Robotics Engineering, Southeast University, 2019—2023.
 
 #### Research Interests
-Recommender Ssystem, Large Language Model.
+Recommender System, Large Language Model.
 
