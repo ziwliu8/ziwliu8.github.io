@@ -1,13 +1,5 @@
-- National Scholarship of Graduate Student, 2024.
+- Excellent Graduation Project of Southeast University, 2023.
 
-- First-prize Scholarship of CUMT, 2024.
+- Silver Medal in Kaggle (2024): LLM Prompt Recovery (***44/2175***).
 
-- First-prize Scholarship of CUMT, 2023.
-
-- Freshman Scholarship of CUMT, 2022.
-
-- Excellent Graduation Project of Jiangsu Province, 2022.
-
-- First-prize Enterprise Scholarship of CUMT, 2020.
-
-- First-prize Scholarship of CUMT, 2019.
+- Volunteer & Travel Award Scholarship of ***AAAI'2025***.

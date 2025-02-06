@@ -1,16 +1,16 @@
 
 
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
+[![ziwliu8](https://img.shields.io/badge/ziwliu8-github-blue?logo=github)](https://github.com/ziwliu8)
 
-He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
+He is an incoming PhD student at the School of Data Science, City University of Hong Kong. Before this, he earned his Master's degree at CityU under the supervision of Prof. Zhao Xiangyu. He also obtained his Bachelor's degree in Robotics Engineering from Southeast University, where Prof. Gan Yahui supervised him.
 
 #### Email
-sli[at]cumt.edu.cn
+ziwliu8[at]gmail.com
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025 (expected).\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+M.E., Data Science, City University of Hong Kong, 2023—2024.\
+B.E., Robotics Engineering, Southeast University, 2019—2023.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Recommender Ssystem, Large Language Model.
 
