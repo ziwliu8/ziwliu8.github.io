@@ -4,7 +4,12 @@
 
 Currently, I am a Ph.D student in the *AML Lab* at the School of ***Data Science***, ***City University of Hong Kong***. Before this, I earned my Master's degree at CityU under the supervision of ***Prof. Zhao Xiangyu***. I also obtained my Bachelor's degree in Robotics Engineering from Southeast University, where ***Prof. Gan Yahui*** and ***Prof. Li Jun*** co-supervised me. 
 
-I also served as a ***reviewer*** for prestigious journals and conferences, including ***IEEE*** Transactions on Knowledge and Data Engineering (***TKDE***),  ***ACM*** Transactions on Information Systems (***TOIS***) and International ACM SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2025***). 
+I also served as a ***reviewer*** for prestigious journals and conferences, including 
+
+- ***IEEE*** Transactions on Knowledge and Data Engineering (***TKDE***)
+- ***ACM*** Transactions on Information Systems (***TOIS***) 
+- **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2025***). 
+- **ACM** Conference on Recommender System (***Recsys'2025***)
 
 #### Lab Info.
 [[Lab homepage]](https://aml-cityu.github.io/)
