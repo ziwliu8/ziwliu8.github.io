@@ -26,21 +26,16 @@ I also served as a ***reviewer*** for prestigious journals and conferences, incl
 - ***IEEE*** Transactions on Knowledge and Data Engineering (***TKDE***)
 - ***ACM*** Transactions on Information Systems (***TOIS***) 
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2025***). 
-- **ACM** Conference on Recommender System (***Recsys'2025***)
-
+- **ACM** Conference on Recommender Systems (***Recsys'2025***)
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+
+- *2025.01*: &nbsp;🎉🎉 I have received the Traval Award from AAAI'2025.
+- *2024.12*: &nbsp;🎉🎉 Our paper SIGMA: Selective Gated Mamba for Sequential Recommendation is accepted by AAAI'2025. 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[SIGMA: Selected Gated Mamba for Sequential Recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33336/35491)
-
-
+***AAAI'2025***: [SIGMA: Selected Gated Mamba for Sequential Recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33336/35491)
 
 # 🎖 Honors and Awards
 - *2025.01* ***AAAI'2025*** Travel Award & Volunteer.
