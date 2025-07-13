@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Ziwei Liu"
-description              : "Hi, this is the homepage of Ziwei Liu. "
+description              : ""
 repository               : "ziwliu8/ziwliu8.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -27,7 +27,7 @@ author:
   location         : "Hong Kong, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=_H3nmDQAAAAJ&hl=zh-CN"
+  googlescholar    : "https://scholar.google.com/citations?user=_H3nmDQAAAAJ&hl"
   email            : "ziwliu8@gmail.com"
   researchgate     : "https://www.researchgate.net/?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoibG9naW4ifX0%3D"# e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
