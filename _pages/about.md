@@ -21,12 +21,14 @@ Currently, I am a Ph.D student in the *AML Lab* at the School of ***Data Science
 
 My research interest includes Recommender Systems, Information Retrieval & LLM. I have published several papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ'> Google Scholar citations.
 
-I also served as a ***reviewer*** for prestigious journals and conferences, including 
-
+# 🤓 Service
+**Reviewer**
 - ***IEEE*** Transactions on Knowledge and Data Engineering (***TKDE***)
 - ***ACM*** Transactions on Information Systems (***TOIS***) 
+**Program Committee**
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2025***). 
 - **ACM** Conference on Recommender Systems (***Recsys'2025***)
+- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 AIA track***)
 
 # 🔥 News
 
