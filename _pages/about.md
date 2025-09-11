@@ -29,7 +29,7 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 **Conference**
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2025***). 
 - **ACM** Conference on Recommender Systems (***Recsys'2025***)
-- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 AIA track***)
+- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
 
 # 🔥 News
 
