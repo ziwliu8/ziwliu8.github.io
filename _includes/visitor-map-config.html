@@ -1,0 +1,64 @@
+<!-- 访问者地图配置 -->
+<script>
+// 访问者地图配置选项
+window.VisitorMapConfig = {
+  // 地图设置
+  map: {
+    center: [20, 0], // 地图中心点 [纬度, 经度]
+    zoom: 2,         // 初始缩放级别
+    minZoom: 1,      // 最小缩放级别
+    maxZoom: 10,     // 最大缩放级别
+    scrollWheelZoom: false, // 禁用滚轮缩放
+    touchZoom: true  // 启用触摸缩放
+  },
+  
+  // 数据设置
+  data: {
+    enableRealTracking: true,    // 启用真实访问者追踪
+    enableMockData: true,        // 启用模拟数据补充
+    maxStoredVisitors: 100,      // 最大存储访问者数量
+    updateInterval: 5 * 60 * 1000, // 更新间隔（毫秒）
+    locationTimeout: 10000,      // 地理位置获取超时时间
+    enableGeolocation: true      // 启用地理位置获取
+  },
+  
+  // 样式设置
+  style: {
+    colors: {
+      low: '#74b9ff',    // 低访问量颜色
+      medium: '#fd79a8', // 中等访问量颜色
+      high: '#e17055',   // 高访问量颜色
+      current: '#667eea' // 当前用户颜色
+    },
+    markerSizes: {
+      low: 6,     // 低访问量标记大小
+      medium: 8,  // 中等访问量标记大小
+      high: 12    // 高访问量标记大小
+    }
+  },
+  
+  // 隐私设置
+  privacy: {
+    enableLocationSharing: true,  // 允许位置分享
+    anonymizeData: false,         // 匿名化数据
+    storeLocally: true,          // 本地存储数据
+    respectDoNotTrack: true      // 尊重Do Not Track设置
+  },
+  
+  // 显示设置
+  display: {
+    showStats: true,           // 显示统计信息
+    showRecentVisitors: true,  // 显示最近访问者
+    showLegend: true,          // 显示图例
+    animateMarkers: true,      // 动画效果
+    showCurrentUser: true      // 高亮当前用户
+  }
+};
+
+// 检查用户的Do Not Track设置
+if (navigator.doNotTrack === '1' && window.VisitorMapConfig.privacy.respectDoNotTrack) {
+  window.VisitorMapConfig.data.enableRealTracking = false;
+  window.VisitorMapConfig.privacy.storeLocally = false;
+  console.log('检测到Do Not Track设置，已禁用访问者追踪');
+}
+</script>

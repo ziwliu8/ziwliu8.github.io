@@ -1,0 +1,232 @@
+<!-- 访问者世界地图配置 -->
+{% include visitor-map-config.html %}
+
+<!-- 访问者世界地图可视化组件 -->
+<div class="visitor-map-container">
+  <div class="visitor-map-header">
+    <h3><i class="fas fa-globe-americas"></i> 全球访问者分布</h3>
+    <div class="map-stats">
+      <span class="stat-item">
+        <span class="stat-number" id="total-visitors">0</span>
+        <span class="stat-label">总访问量</span>
+      </span>
+      <span class="stat-item">
+        <span class="stat-number" id="countries-count">0</span>
+        <span class="stat-label">国家/地区</span>
+      </span>
+      <span class="stat-item">
+        <span class="stat-number" id="online-visitors">0</span>
+        <span class="stat-label">在线访客</span>
+      </span>
+    </div>
+  </div>
+  
+  <div class="visitor-map-wrapper">
+    <div id="visitor-world-map" class="visitor-map"></div>
+    <div class="map-legend">
+      <div class="legend-item">
+        <span class="legend-color low"></span>
+        <span class="legend-text">1-10 访问</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-color medium"></span>
+        <span class="legend-text">11-50 访问</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-color high"></span>
+        <span class="legend-text">50+ 访问</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="recent-visitors">
+    <h4>最近访问者</h4>
+    <div id="recent-visitors-list" class="visitors-list">
+      <!-- 动态加载最近访问者 -->
+    </div>
+  </div>
+</div>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+<style>
+.visitor-map-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+  overflow: hidden;
+  border: 1px solid #e1e5e9;
+}
+
+.visitor-map-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.visitor-map-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.map-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-top: 0.2rem;
+}
+
+.visitor-map-wrapper {
+  position: relative;
+}
+
+.visitor-map {
+  height: 400px;
+  width: 100%;
+  background: #f8f9fa;
+}
+
+.map-legend {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.legend-color.low { background: #74b9ff; }
+.legend-color.medium { background: #fd79a8; }
+.legend-color.high { background: #e17055; }
+
+.recent-visitors {
+  padding: 1.5rem;
+  border-top: 1px solid #e1e5e9;
+  background: #f8f9fa;
+}
+
+.recent-visitors h4 {
+  margin: 0 0 1rem 0;
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+
+.visitors-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.visitor-item {
+  background: white;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border-left: 3px solid #667eea;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-size: 0.85rem;
+}
+
+.visitor-location {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.visitor-time {
+  color: #718096;
+  font-size: 0.75rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .visitor-map-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .map-stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .visitor-map {
+    height: 300px;
+  }
+  
+  .visitors-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 加载动画 */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  color: #718096;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e2e8f0;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>

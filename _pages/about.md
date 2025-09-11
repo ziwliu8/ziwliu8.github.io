@@ -54,5 +54,9 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 - *2025.08*, KDD'2025, Large language model enhanced recommender systems: Taxonomy, trend, application and future (https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
 
 
+# 🌍 全球访问者分布
+
+{% include visitor-map.html %}
+
 # 💻 Internships
 - *2024.05 - 2024.12*, Research Assistant, Chinese University of Hong Kong (Shenzhen), China.
