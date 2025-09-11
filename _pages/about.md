@@ -56,6 +56,6 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 # 💻 Internships
 - *2024.05 - 2024.12*, Research Assistant, Chinese University of Hong Kong (Shenzhen), China.
 
-# 🌍 全球访问者分布
+# 🌍 Visiting Record
 
 {% include visitor-map.html %}
