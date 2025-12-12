@@ -32,8 +32,12 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 - **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
 
 # 🔥 News
+- *2025.12.11* Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.
+
+- *2025.11.19* Our New paper LLM-EDT is preprinted on Arxiv, which propose a general cross-domain sequential recommender addressing the imbalance domain issue and Rough profiling Issue
 
 - *2025.01*: &nbsp;🎉🎉 I have received the Traval Award from AAAI'2025.
+
 - *2024.12*: &nbsp;🎉🎉 Our paper SIGMA: Selective Gated Mamba for Sequential Recommendation is accepted by AAAI'2025. 
 
 # 📝 Publications 
@@ -56,10 +60,6 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 # 💬 Tutorial
 - *2025.08*, KDD'2025, Large language model enhanced recommender systems: Taxonomy, trend, application and future (https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
 
-# 📰 News
-- *2025.12.11* Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.
-
-- *2025.11.19* Our New paper LLM-EDT is preprinted on Arxiv, which propose a general cross-domain sequential recommender addressing the imbalance domain issue and Rough profiling Issue
 
 # 💻 Internships
 - *2024.05 - 2024.12*, Research Assistant, Chinese University of Hong Kong (Shenzhen), China.
