@@ -37,6 +37,9 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 - *2024.12*: &nbsp;🎉🎉 Our paper SIGMA: Selective Gated Mamba for Sequential Recommendation is accepted by AAAI'2025. 
 
 # 📝 Publications 
+***Preprint***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
+
+***Preprint***: [LLM-EDT: Large Language Model Enhanced Cross-domain Sequential Recommendation with Dual-phase Training](https://arxiv.org/abs/2511.19931)
 
 ***AAAI'2025***: [SIGMA: Selected Gated Mamba for Sequential Recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33336/35491)
 
@@ -52,6 +55,11 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 
 # 💬 Tutorial
 - *2025.08*, KDD'2025, Large language model enhanced recommender systems: Taxonomy, trend, application and future (https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
+
+# 📰 News
+- *2025.12.11* Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.
+
+- *2025.11.19* Our New paper LLM-EDT is preprinted on Arxiv, which propose a general cross-domain sequential recommender addressing the imbalance domain issue and Rough profiling Issue
 
 # 💻 Internships
 - *2024.05 - 2024.12*, Research Assistant, Chinese University of Hong Kong (Shenzhen), China.
