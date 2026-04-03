@@ -27,20 +27,25 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 - ***ACM*** Transactions on Information Systems (***TOIS***)
  
 **Conference**
+- **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2026***). 
+- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
+- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2025***). 
 - **ACM** Conference on Recommender Systems (***Recsys'2025***)
-- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
+
 
 # 🔥 News
-- *2026.04.03* Our Paper LLM-EDT is accepted by SIGIR'26. Thanks for all the co-author's help and guidance!
+- *2026.04.03* **Our Paper LLM-EDT is accepted by SIGIR'26. Thanks for all the co-author's help and guidance!**
 
-- *2025.12.11* Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.
+- *2026.01.14* **One Paper got accepted by WWW'26. Congratration to the co-authors!**
 
-- *2025.11.19* Our New paper LLM-EDT is preprinted on Arxiv, which propose a general cross-domain sequential recommender addressing the imbalance domain issue and Rough profiling Issue
+- *2025.12.11* **Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.**
 
-- *2025.01*: &nbsp;🎉🎉 I have received the Traval Award from AAAI'2025.
+- *2025.11.19* **Our New paper LLM-EDT is preprinted on Arxiv, which propose a general cross-domain sequential recommender addressing the imbalance domain issue and Rough profiling Issue.**
 
-- *2024.12*: &nbsp;🎉🎉 Our paper SIGMA: Selective Gated Mamba for Sequential Recommendation is accepted by AAAI'2025. 
+- *2025.01*: &nbsp;🎉🎉 **I have received the Traval Award from AAAI'2025.**
+
+- *2024.12*: &nbsp;🎉🎉 **Our paper SIGMA: Selective Gated Mamba for Sequential Recommendation is accepted by AAAI'2025.** 
 
 # 📝 Publications 
 ***Preprint***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
