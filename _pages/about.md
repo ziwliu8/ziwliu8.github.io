@@ -32,6 +32,8 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 - **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
 
 # 🔥 News
+- *2026.04.03* Our Paper LLM-EDT is accepted by SIGIR'26. Thanks for all the co-author's help and guidance!
+
 - *2025.12.11* Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.
 
 - *2025.11.19* Our New paper LLM-EDT is preprinted on Arxiv, which propose a general cross-domain sequential recommender addressing the imbalance domain issue and Rough profiling Issue
@@ -43,7 +45,7 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 # 📝 Publications 
 ***Preprint***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
 
-***Preprint***: [LLM-EDT: Large Language Model Enhanced Cross-domain Sequential Recommendation with Dual-phase Training](https://arxiv.org/abs/2511.19931)
+***SIGIR'2026***: [LLM-EDT: Large Language Model Enhanced Cross-domain Sequential Recommendation with Dual-phase Training](https://arxiv.org/abs/2511.19931)
 
 ***AAAI'2025***: [SIGMA: Selected Gated Mamba for Sequential Recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33336/35491)
 
