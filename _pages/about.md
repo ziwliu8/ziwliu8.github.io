@@ -35,9 +35,9 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 
 
 # 🔥 News
-- *2026.04.03* **Our Paper LLM-EDT is accepted by SIGIR'26. Thanks for all the co-author's help and guidance!**
+- *2026.04.03* **Our Paper LLM-EDT is accepted by SIGIR'26. Thanks for help and guidance from Bro Qidong & Yejing!**
 
-- *2026.01.14* **One Paper got accepted by WWW'26. Congratration to the co-authors!**
+- *2026.01.14* **One Paper got accepted by WWW'26. Thank Bro Yejing for carrying me!**
 
 - *2025.12.11* **Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.**
 
@@ -45,7 +45,7 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 
 - *2025.01*: &nbsp;🎉🎉 **I have received the Traval Award from AAAI'2025.**
 
-- *2024.12*: &nbsp;🎉🎉 **Our paper SIGMA: Selective Gated Mamba for Sequential Recommendation is accepted by AAAI'2025.** 
+- *2024.12*: &nbsp;🎉🎉 **Our paper SIGMA: Selective Gated Mamba for Sequential Recommendation is accepted by AAAI'2025. Sincerely thank Bro Qidong for leading the way** 
 
 # 📝 Publications 
 ***Preprint***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
