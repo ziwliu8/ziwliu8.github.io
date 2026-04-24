@@ -24,9 +24,11 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 # 🤓 Service
 **Journals**
 - ***IEEE*** Transactions on Knowledge and Data Engineering (***TKDE***)
+- ***ACM*** Transactions on Knowledge Discovery from Data (***TKDD***)
 - ***ACM*** Transactions on Information Systems (***TOIS***)
  
 **Conference**
+- ***ACM*** International Conference on Multimedia (***MM'2026***)
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2026***). 
 - **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
 - **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
