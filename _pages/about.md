@@ -19,7 +19,7 @@ redirect_from:
 
 Currently, I am a Ph.D student in the *AML Lab* at the School of ***Data Science***, ***City University of Hong Kong***. Before this, I earned my Master's degree at CityU under the supervision of ***Prof. Zhao Xiangyu***. I also obtained my Bachelor's degree in Robotics Engineering from Southeast University, where ***Prof. Gan Yahui*** and ***Prof. Li Jun*** co-supervised me. 
 
-My research interest includes Recommender Systems, Information Retrieval & LLM. I have published several papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ'> Google Scholar citations.
+My research interest includes Recommender Systems, Information Retrieval and LLM. I have published several papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ'> Google Scholar citations.
 
 # 🤓 Service
 **Journals**
@@ -30,18 +30,18 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 **Conference**
 - ***ACM*** International Conference on Multimedia (***MM'2026***)
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2026***). 
-- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
-- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck & AIA track***)
+- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck and AIA track***)
+- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main tarck and AIA track***)
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2025***). 
 - **ACM** Conference on Recommender Systems (***Recsys'2025***)
 
 
 # 🔥 News
-- *2026.05.17* **Our Paper H2Rec is accepted by KDD'26 ADS Track, which has been applied to Red Book (Xiao Hong Shu) and achieved commercial outcomes (ADVV + 0.89% and COST +0.59%). Great thanks for help and suggestion from Bro Yejing & Qidong!**
+- *2026.05.17* **Our Paper H2Rec is accepted by KDD'26 ADS Track, which has been applied to Red Book (Xiao Hong Shu) and achieved commercial outcomes (ADVV + 0.89% and COST +0.59%). Great thanks for help and suggestion from Bro Yejing and Qidong!**
 
 - *2026.05.11* **Our New Paper ComeIR is preprinted on Arxiv, which identify the bottleneck of the current decoupled two stage GR framework and leverage the engram memory for better GR input and decoding.**
 
-- *2026.04.03* **Our Paper LLM-EDT is accepted by SIGIR'26. Thanks for help and guidance from Bro Qidong & Yejing!**
+- *2026.04.03* **Our Paper LLM-EDT is accepted by SIGIR'26. Thanks for help and guidance from Bro Qidong and Yejing!**
 
 - *2026.01.14* **One Paper got accepted by WWW'26. Thank Bro Yejing for carrying me!**
 
@@ -54,14 +54,16 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 - *2024.12*: &nbsp;🎉🎉 **Our paper SIGMA: Selective Gated Mamba for Sequential Recommendation is accepted by AAAI'2025. Sincerely thank Bro Qidong for leading the way** 
 
 # 📝 Publications 
-***Preprint***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
+***Preprint***: [Conditional Memory Enhanced Item Representation for Generative Recommendation](https://arxiv.org/abs/2605.11447)
+
+***SIGKDD'2026 ADS***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
 
 ***SIGIR'2026***: [LLM-EDT: Large Language Model Enhanced Cross-domain Sequential Recommendation with Dual-phase Training](https://arxiv.org/abs/2511.19931)
 
 ***AAAI'2025***: [SIGMA: Selected Gated Mamba for Sequential Recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33336/35491)
 
 # 🎖 Honors and Awards
-- *2025.01* ***AAAI'2025*** Travel Award & Volunteer.
+- *2025.01* ***AAAI'2025*** Travel Award and Volunteer.
 - *2024.12* Silver Medal in Kaggle (2024): LLM Prompt Recovery (***44/2175***). 
 - *2023.06* Excellent Graduation Project of Southeast University.
 
