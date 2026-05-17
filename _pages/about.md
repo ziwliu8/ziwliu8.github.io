@@ -37,6 +37,10 @@ My research interest includes Recommender Systems, Information Retrieval & LLM. 
 
 
 # 🔥 News
+- *2026.05.17* **Our Paper H2Rec is accepted by KDD'26 ADS Track, which has been applied to Red Book (Xiao Hong Shu) and achieved commercial outcomes (ADVV + 0.89% and COST +0.59%). Great thanks for help and suggestion from Bro Yejing & Qidong!**
+
+- *2026.05.11* **Our New Paper ComeIR is preprinted on Arxiv, which identify the bottleneck of the current decoupled two stage GR framework and leverage the engram memory for better GR input and decoding.**
+
 - *2026.04.03* **Our Paper LLM-EDT is accepted by SIGIR'26. Thanks for help and guidance from Bro Qidong & Yejing!**
 
 - *2026.01.14* **One Paper got accepted by WWW'26. Thank Bro Yejing for carrying me!**
