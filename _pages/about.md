@@ -37,6 +37,8 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 
 
 # 🔥 News
+- *2026.05.17* **Our Tutorial “Tutorial on Generative Recommendation: Foundations and Frontiers” is accepted by KDD'26. Great thanks for Xiaopeng for carrying me!**
+
 - *2026.05.17* **Our Paper H2Rec is accepted by KDD'26 ADS Track, which has been applied to Red Book (Xiao Hong Shu) and achieved commercial outcomes (ADVV + 0.89% and COST +0.59%). Great thanks for help and suggestion from Bro Yejing and Qidong!**
 
 - *2026.05.11* **Our New Paper ComeIR is preprinted on Arxiv, which identify the bottleneck of the current decoupled two stage GR framework and leverage the engram memory for better GR input and decoding.**
@@ -73,6 +75,7 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 - *2019.09 - 2023.06*, B.E., Robotics Engineering, Southeast University.
 
 # 💬 Tutorial
+- *2026.08*, KDD'2026, Tutorial on Generative Recommendation: Foundations and Frontiers (https://github.com/Kuaishou-RecModel/Tri-Decoupled-GenRec)
 - *2025.08*, KDD'2025, Large language model enhanced recommender systems: Taxonomy, trend, application and future (https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
 
 
