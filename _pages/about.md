@@ -21,6 +21,10 @@ Currently, I am a Ph.D student in the *AML Lab* at the School of ***Data Science
 
 My research interest includes Recommender Systems, Information Retrieval and LLM. I have published several papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ'> Google Scholar citations.
 
+<p class="cv-actions">
+  <a id="generate-cv-button" class="btn btn--info" href="{{ '/cv/?print=1' | relative_url }}" target="_blank" rel="noopener">Generate CV PDF</a>
+</p>
+
 # 🤓 Service
 **Journals**
 - ***IEEE*** Transactions on Knowledge and Data Engineering (***TKDE***)

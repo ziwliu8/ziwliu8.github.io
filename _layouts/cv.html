@@ -1,0 +1,247 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: "CV" }} | {{ site.title }}</title>
+    <style>
+      :root {
+        --ink: #222;
+        --muted: #555;
+        --line: #d8dce2;
+        --accent: #1f4e79;
+        --paper: #fff;
+        --screen-bg: #f3f5f8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--screen-bg);
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.42;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .cv-toolbar {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 1rem;
+      }
+
+      .cv-toolbar a,
+      .cv-toolbar button {
+        display: inline-block;
+        padding: 0.55rem 0.9rem;
+        color: #fff;
+        background: var(--accent);
+        border: 0;
+        border-radius: 4px;
+        font: 600 0.95rem "Helvetica Neue", Arial, sans-serif;
+        cursor: pointer;
+      }
+
+      .cv-toolbar a.secondary {
+        color: var(--accent);
+        background: #fff;
+        border: 1px solid var(--accent);
+      }
+
+      .cv-page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto 2rem;
+        padding: 14mm 15mm;
+        background: var(--paper);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      .cv-header {
+        text-align: center;
+        border-bottom: 1.5px solid var(--line);
+        padding-bottom: 0.55rem;
+        margin-bottom: 0.7rem;
+      }
+
+      .cv-header h1 {
+        margin: 0 0 0.2rem;
+        color: var(--accent);
+        font-size: 23pt;
+        letter-spacing: 0.02em;
+      }
+
+      .cv-contact,
+      .cv-summary {
+        margin: 0.16rem 0;
+      }
+
+      .cv-contact {
+        color: var(--muted);
+        font-size: 9.4pt;
+      }
+
+      .cv-summary {
+        max-width: 168mm;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cv-section {
+        margin-top: 0.65rem;
+      }
+
+      .cv-section h2 {
+        margin: 0 0 0.28rem;
+        padding-bottom: 0.14rem;
+        color: var(--accent);
+        border-bottom: 1px solid var(--line);
+        font-size: 11pt;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .cv-item {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        column-gap: 1rem;
+        margin-bottom: 0.35rem;
+      }
+
+      .cv-item h3,
+      .cv-publication h3 {
+        margin: 0;
+        font-size: 10.5pt;
+      }
+
+      .cv-item p,
+      .cv-publication p,
+      .cv-section ul {
+        margin: 0.08rem 0;
+      }
+
+      .cv-date {
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .cv-publication {
+        margin-bottom: 0.38rem;
+      }
+
+      .cv-publication ul,
+      .cv-section ul {
+        padding-left: 1.1rem;
+      }
+
+      .cv-publication li,
+      .cv-section li {
+        margin: 0.05rem 0;
+      }
+
+      .cv-compact-list {
+        columns: 2;
+        column-gap: 1.5rem;
+      }
+
+      @media (max-width: 760px) {
+        .cv-page {
+          width: auto;
+          min-height: 0;
+          margin: 0;
+          padding: 1rem;
+          box-shadow: none;
+        }
+
+        .cv-item {
+          grid-template-columns: 1fr;
+        }
+
+        .cv-compact-list {
+          columns: 1;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 12mm 13mm;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+          font-size: 9.4pt;
+          line-height: 1.32;
+        }
+
+        a {
+          color: #000;
+        }
+
+        .no-print {
+          display: none !important;
+        }
+
+        .cv-page {
+          width: auto;
+          min-height: 0;
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+        }
+
+        .cv-header h1 {
+          font-size: 21pt;
+        }
+
+        .cv-section {
+          break-inside: avoid;
+          margin-top: 0.52rem;
+        }
+
+        .cv-publication {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="cv-toolbar no-print" aria-label="CV actions">
+      <a class="secondary" href="{{ '/' | relative_url }}">Back to homepage</a>
+      <button type="button" onclick="window.print()">Download / Print PDF</button>
+    </nav>
+
+    <main class="cv-page">
+      {{ content }}
+    </main>
+
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get("print") === "1") {
+          window.addEventListener("load", function () {
+            window.setTimeout(function () {
+              window.print();
+            }, 450);
+          });
+        }
+      }());
+    </script>
+  </body>
+</html>
