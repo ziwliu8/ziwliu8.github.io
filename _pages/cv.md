@@ -6,31 +6,28 @@ author_profile: false
 ---
 
 <header class="cv-header">
-  <h1>Ziwei Liu</h1>
-  <p class="cv-contact">
-    School of Data Science, City University of Hong Kong &middot; Hong Kong, China &middot;
-    <a href="mailto:lziwei2-c@my.cityu.edu.hk">lziwei2-c@my.cityu.edu.hk</a>
-  </p>
-  <p class="cv-contact">
-    <a href="https://ziwliu8.github.io">ziwliu8.github.io</a> &middot;
-    <a href="https://github.com/ziwliu8">GitHub</a> &middot;
-    <a href="https://scholar.google.com/citations?user=_H3nmDQAAAAJ">Google Scholar</a> &middot;
-    <a href="https://www.researchgate.net/?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoibG9naW4ifX0%3D">ResearchGate</a>
-  </p>
-</header>
-
-<div class="cv-intro">
-  <div class="cv-intro-text">
-    <p>
+  <div class="cv-header-left">
+    <h1>Ziwei Liu</h1>
+    <p class="cv-contact">
+      School of Data Science, City University of Hong Kong &middot; Hong Kong, China &middot;
+      <a href="mailto:lziwei2-c@my.cityu.edu.hk">lziwei2-c@my.cityu.edu.hk</a>
+    </p>
+    <p class="cv-contact">
+      <a href="https://ziwliu8.github.io">ziwliu8.github.io</a> &middot;
+      <a href="https://github.com/ziwliu8">GitHub</a> &middot;
+      <a href="https://scholar.google.com/citations?user=_H3nmDQAAAAJ">Google Scholar</a> &middot;
+      <a href="https://www.researchgate.net/?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoibG9naW4ifX0%3D">ResearchGate</a>
+    </p>
+    <p class="cv-summary">
       Ph.D. student in the AML Lab at the School of Data Science, City University of Hong Kong.
       My research focuses on Recommender Systems, Information Retrieval, and Large Language Models,
       with papers published or preprinted at top international AI conferences.
     </p>
   </div>
-  <div class="cv-intro-photo">
-    <img src="images/android-chrome-512x512.png" alt="Ziwei Liu">
+  <div class="cv-header-photo">
+    <img src="{{ '/images/android-chrome-512x512.png' | relative_url }}" alt="Ziwei Liu">
   </div>
-</div>
+</header>
 
 <section class="cv-section">
   <h2>Education</h2>
