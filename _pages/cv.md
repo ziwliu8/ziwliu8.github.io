@@ -17,12 +17,20 @@ author_profile: false
     <a href="https://scholar.google.com/citations?user=_H3nmDQAAAAJ">Google Scholar</a> &middot;
     <a href="https://www.researchgate.net/?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoibG9naW4ifX0%3D">ResearchGate</a>
   </p>
-  <p class="cv-summary">
-    Ph.D. student in the AML Lab at the School of Data Science, City University of Hong Kong.
-    My research focuses on Recommender Systems, Information Retrieval, and Large Language Models,
-    with papers published or preprinted at top international AI conferences.
-  </p>
 </header>
+
+<div class="cv-intro">
+  <div class="cv-intro-text">
+    <p>
+      Ph.D. student in the AML Lab at the School of Data Science, City University of Hong Kong.
+      My research focuses on Recommender Systems, Information Retrieval, and Large Language Models,
+      with papers published or preprinted at top international AI conferences.
+    </p>
+  </div>
+  <div class="cv-intro-photo">
+    <img src="images/android-chrome-512x512.png" alt="Ziwei Liu">
+  </div>
+</div>
 
 <section class="cv-section">
   <h2>Education</h2>
