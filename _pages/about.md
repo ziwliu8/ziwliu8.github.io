@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Currently, I am a Ph.D student in the *AML Lab* at the School of ***Data Science***, ***City University of Hong Kong***. Before this, I earned my Master's degree at CityU under the supervision of ***Prof. Zhao Xiangyu***. I also obtained my Bachelor's degree in Robotics Engineering from Southeast University, where ***Prof. Gan Yahui*** and ***Prof. Li Jun*** co-supervised me. 
+Currently, I am a first-year Ph.D student in the *AML Lab* at the School of ***Data Science***, ***City University of Hong Kong***<a href='https://aml-cityu.github.io/'>. Before this, I earned my Master's degree at CityU under the supervision of ***Prof. Zhao Xiangyu***. I also obtained my Bachelor's degree in Robotics Engineering from Southeast University, where ***Prof. Gan Yahui*** and ***Prof. Li Jun*** co-supervised me. 
 
 My research interest includes Recommender Systems, Information Retrieval and LLM. I have published several papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ'> Google Scholar citations.
 
@@ -25,38 +25,38 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
   <a id="generate-cv-button" class="btn btn--info" href="{{ '/cv/?print=1' | relative_url }}" target="_blank" rel="noopener">Generate CV PDF</a>
 </p>
 
-# 🤓 Service
+# 🏷️ Service
 **Journals**
-- ***IEEE*** Transactions on Knowledge and Data Engineering (***TKDE***)
-- ***ACM*** Transactions on Knowledge Discovery from Data (***TKDD***)
-- ***ACM*** Transactions on Information Systems (***TOIS***)
+- ***IEEE*** Transactions on Knowledge and Data Engineering (***TKDE***).
+- ***ACM*** Transactions on Knowledge Discovery from Data (***TKDD***).
+- ***ACM*** Transactions on Information Systems (***TOIS***).
  
 **Conference**
-- ***ACM*** International Conference on Multimedia (***MM'2026 main track and DB track***)
+- ***ACM*** International Conference on Multimedia (***MM'2026 main track and DB track***).
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2026***). 
-- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main track and AIA track***)
+- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main track and AIA track***).
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2025***). 
-- **ACM** Conference on Recommender Systems (***Recsys'2025***)
+- **ACM** Conference on Recommender Systems (***Recsys'2025***).
 
 
 # 🔥 News
-- *2026.05.17* **Our Tutorial “Tutorial on Generative Recommendation: Foundations and Frontiers” is accepted by KDD'26. Great thanks for Xiaopeng for carrying me!**
+- *2026.05.17* Our Tutorial **“Tutorial on Generative Recommendation: Foundations and Frontiers”** is accepted by **KDD'26**. Great thanks for Xiaopeng for carrying me!
 
-- *2026.05.17* **Our Paper H2Rec is accepted by KDD'26 ADS Track, which has been applied to Red Book (Xiao Hong Shu) and achieved commercial outcomes (ADVV + 0.89% and COST +0.59%). Great thanks for help and suggestion from Bro Yejing and Qidong!**
+- *2026.05.17* Our Paper **H2Rec** is accepted by **KDD'26 ADS Track (CCF-A)**, which has been applied to **Red Book (Xiao Hong Shu)** and **achieved commercial outcomes (ADVV + 0.89% and COST +0.59%)**. Great thanks for help and suggestion from Bro Yejing and Qidong!
 
-- *2026.05.11* **Our New Paper ComeIR is preprinted on Arxiv, which identify the bottleneck of the current decoupled two stage GR framework and leverage the engram memory for better GR input and decoding.**
+- *2026.05.11* Our New Paper ComeIR is preprinted on Arxiv, which identify the bottleneck of the current decoupled two stage GR framework and leverage the engram memory for better GR input and decoding.
 
-- *2026.04.03* **Our Paper LLM-EDT is accepted by SIGIR'26. Thanks for help and guidance from Bro Qidong and Yejing!**
+- *2026.04.03* Our Paper **LLM-EDT** is accepted by **SIGIR'26 (CCF-A)**. Thanks for help and guidance from Bro Qidong and Yejing!
 
-- *2026.01.14* **One Paper got accepted by WWW'26. Thank Bro Yejing for carrying me!**
+- *2026.01.14* One Paper got accepted by **WWW'26 (CCF-A)**. Thank Bro Yejing for carrying me!**
 
-- *2025.12.11* **Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.**
+- *2025.12.11* Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.
 
-- *2025.11.19* **Our New paper LLM-EDT is preprinted on Arxiv, which propose a general cross-domain sequential recommender addressing the imbalance domain issue and Rough profiling Issue.**
+- *2025.11.19* Our New paper LLM-EDT is preprinted on Arxiv, which propose a general cross-domain sequential recommender addressing the imbalance domain issue and Rough profiling Issue.
 
-- *2025.01*: &nbsp;🎉🎉 **I have received the Traval Award from AAAI'2025.**
+- *2025.01*: &nbsp;🎉🎉 I have received the **Traval Award from AAAI'2025.**
 
-- *2024.12*: &nbsp;🎉🎉 **Our paper SIGMA: Selective Gated Mamba for Sequential Recommendation is accepted by AAAI'2025. Sincerely thank Bro Qidong for leading the way** 
+- *2024.12*: &nbsp;🎉🎉 Our paper **SIGMA: Selective Gated Mamba for Sequential Recommendation** is accepted by AAAI'2025 (**CCF-A**). Sincerely thank Bro Qidong for leading the way. 
 
 # 📝 Publications 
 ***Preprint***: [Conditional Memory Enhanced Item Representation for Generative Recommendation](https://arxiv.org/abs/2605.11447)
@@ -73,8 +73,8 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 - *2023.06* Excellent Graduation Project of Southeast University.
 
 # 📖 Educations
-- *2025.09 - now*, Ph.D., Data Science, City University of Hong Kong
-- *2023.09 - 2024.10*, M.E., Data Science, City University of Hong Kong, 
+- *2025.09 - now*, Ph.D., Data Science, City University of Hong Kong.
+- *2023.09 - 2024.10*, M.E., Data Science, City University of Hong Kong. 
 - *2019.09 - 2023.06*, B.E., Robotics Engineering, Southeast University.
 
 # 💬 Tutorial
