@@ -61,11 +61,11 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 # 📝 Publications 
 ***Preprint***: [Conditional Memory Enhanced Item Representation for Generative Recommendation](https://arxiv.org/abs/2605.11447)
 
-***SIGKDD'2026 ADS***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
+***SIGKDD'2026 ADS (CCF-A)***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
 
-***SIGIR'2026***: [LLM-EDT: Large Language Model Enhanced Cross-domain Sequential Recommendation with Dual-phase Training](https://arxiv.org/abs/2511.19931)
+***SIGIR'2026 (CCF-A)***: [LLM-EDT: Large Language Model Enhanced Cross-domain Sequential Recommendation with Dual-phase Training](https://arxiv.org/abs/2511.19931)
 
-***AAAI'2025***: [SIGMA: Selected Gated Mamba for Sequential Recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33336/35491)
+***AAAI'2025 (CCF-A)***: [SIGMA: Selected Gated Mamba for Sequential Recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33336/35491)
 
 # 🎖 Honors and Awards
 - *2025.01* ***AAAI'2025*** Travel Award and Volunteer.
@@ -78,8 +78,8 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 - *2019.09 - 2023.06*, B.E., Robotics Engineering, Southeast University.
 
 # 💬 Tutorial
-- *2026.08*, KDD'2026, Tutorial on Generative Recommendation: Foundations and Frontiers (https://github.com/Kuaishou-RecModel/Tri-Decoupled-GenRec)
-- *2025.08*, KDD'2025, Large language model enhanced recommender systems: Taxonomy, trend, application and future (https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
+- *2026.08*, KDD'2026 (CCF-A), Tutorial on Generative Recommendation: Foundations and Frontiers (https://github.com/Kuaishou-RecModel/Tri-Decoupled-GenRec)
+- *2025.08*, KDD'2025 (CCF-A), Large language model enhanced recommender systems: Taxonomy, trend, application and future (https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
 
 
 # 💻 Internships
