@@ -32,6 +32,7 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 - ***ACM*** Transactions on Information Systems (***TOIS***).
  
 **Conference**
+- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2027 main track***).
 - ***ACM*** International Conference on Multimedia (***MM'2026 main track and DB track***).
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2026***). 
 - **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main track and AIA track***).
@@ -40,6 +41,8 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 
 
 # 🔥 News
+- *2026。06.21* I received the **"Student Travel Award" of KDD26**.
+
 - *2026.05.17* Our Tutorial **“Tutorial on Generative Recommendation: Foundations and Frontiers”** is accepted by **KDD'26**. Great thanks for Xiaopeng for carrying me!
 
 - *2026.05.17* Our Paper **H2Rec** is accepted by **KDD'26 ADS Track (CCF-A)**, which has been applied to **Red Book (Xiao Hong Shu)** and **achieved commercial outcomes (ADVV + 0.89% and COST +0.59%)**. Great thanks for help and suggestion from Bro Yejing and Qidong!
