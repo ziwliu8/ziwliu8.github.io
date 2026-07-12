@@ -215,4 +215,13 @@
       {% endif %}
     </div>
   </div>
+
+  <div class="author__sidebar-widgets">
+    <a class="author__cv-button" href="{{ '/cv/?print=1' | relative_url }}" target="_blank" rel="noopener">
+      <i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i>
+      <span>Generate CV PDF</span>
+    </a>
+
+    {% include visitor-map.html %}
+  </div>
 </div>

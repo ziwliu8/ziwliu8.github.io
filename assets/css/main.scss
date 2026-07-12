@@ -108,6 +108,34 @@ h1:before, .anchor:before {
     font-size: .8em;
 }
 
-.cv-actions {
-    margin: 1.25rem 0 1.5rem;
+.author__sidebar-widgets {
+    margin-top: 1rem;
+}
+
+.author__cv-button {
+    align-items: center;
+    background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
+    border-radius: 999px;
+    box-shadow: 0 8px 18px rgba(47, 128, 237, 0.22);
+    color: #fff;
+    display: flex;
+    font-size: 0.85rem;
+    font-weight: 700;
+    gap: 0.35rem;
+    justify-content: center;
+    line-height: 1;
+    padding: 0.75rem 0.9rem;
+    text-decoration: none;
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
+
+    &:visited {
+        color: #fff;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 22px rgba(47, 128, 237, 0.28);
+        color: #fff;
+        text-decoration: none;
+        transform: translateY(-1px);
+    }
 }
