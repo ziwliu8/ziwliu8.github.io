@@ -20,6 +20,10 @@ class VisitorTracker {
   }
 
   async startTracking() {
+    if (window.VisitorMapConfig?.data?.enableRealTracking === false) {
+      return;
+    }
+
     try {
       // 获取访问者基础信息
       const visitorInfo = await this.getVisitorInfo();
@@ -194,9 +198,10 @@ class VisitorTracker {
         // 添加新的访问记录
         visitData.push(visitorInfo);
         
-        // 限制存储的记录数量（最多100条）
-        if (visitData.length > 100) {
-          visitData = visitData.slice(-100);
+        // 仅保留配置数量的本地真实访问记录
+        const maxStoredVisitors = window.VisitorMapConfig?.data?.maxStoredVisitors || 100;
+        if (visitData.length > maxStoredVisitors) {
+          visitData = visitData.slice(-maxStoredVisitors);
         }
       }
       

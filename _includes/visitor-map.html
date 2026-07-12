@@ -12,11 +12,11 @@
       </span>
       <span class="stat-item">
         <span class="stat-number" id="countries-count">0</span>
-        <span class="stat-label">国家/地区</span>
+        <span class="stat-label">本地地区</span>
       </span>
       <span class="stat-item">
         <span class="stat-number" id="online-visitors">0</span>
-        <span class="stat-label">在线访客</span>
+        <span class="stat-label">当前会话</span>
       </span>
     </div>
   </div>
@@ -46,6 +46,16 @@
     </div>
   </div>
 </div>
+
+<!-- 持久化首页访问量；同一访客 30 分钟内只计一次 -->
+{% if jekyll.environment == "production" %}
+<script
+  src="https://page-views-api.ratneshc.com/script"
+  data-site="ziwliu8.github.io"
+  data-path="/"
+  defer>
+</script>
+{% endif %}
 
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"

@@ -9,6 +9,8 @@ class VisitorWorldMap {
     this.markers = [];
     this.visitorsData = [];
     this.countryData = {};
+    this.totalViews = null;
+    this.viewsApiUrl = 'https://page-views-api.ratneshc.com/api/v1/views?site=ziwliu8.github.io&path=%2F';
     this.init();
   }
 
@@ -22,6 +24,9 @@ class VisitorWorldMap {
       
       // 加载访问者数据
       await this.loadVisitorData();
+
+      // 从持久化服务读取全站访问量
+      await this.loadTotalViews();
       
       // 渲染地图标记
       this.renderMapMarkers();
@@ -32,7 +37,7 @@ class VisitorWorldMap {
       // 显示最近访问者
       this.renderRecentVisitors();
       
-      // 定期更新数据
+      // 监听真实位置，并在跟踪完成后同步访问量
       this.startAutoUpdate();
       
     } catch (error) {
@@ -111,88 +116,35 @@ class VisitorWorldMap {
   }
 
   async loadVisitorData() {
-    try {
-      // 首先尝试从访问者追踪器获取真实数据
-      if (typeof window.getVisitorMapData === 'function') {
-        const realData = window.getVisitorMapData();
-        if (realData && realData.length > 0) {
-          this.loadRealVisitorData(realData);
-          return;
-        }
+    this.visitorsData = [];
+    this.countryData = {};
+
+    if (typeof window.getVisitorMapData === 'function') {
+      const realData = window.getVisitorMapData();
+      if (realData && realData.length > 0) {
+        this.loadRealVisitorData(realData);
       }
-      
-      // 尝试从Google Analytics获取数据
-      if (typeof gtag !== 'undefined') {
-        await this.loadGoogleAnalyticsData();
-      } else {
-        // 使用模拟数据
-        this.loadMockData();
-      }
-    } catch (error) {
-      console.warn('无法获取真实访问数据，使用模拟数据:', error);
-      this.loadMockData();
     }
   }
 
-  async loadGoogleAnalyticsData() {
-    // 这里可以集成Google Analytics Reporting API
-    // 由于静态网站限制，我们使用客户端方法获取基础信息
+  async loadTotalViews() {
     try {
-      // 获取用户地理位置信息
-      if (navigator.geolocation) {
-        const position = await this.getCurrentPosition();
-        const visitor = await this.getLocationInfo(position.coords.latitude, position.coords.longitude);
-        this.addCurrentVisitor(visitor);
+      const response = await fetch(this.viewsApiUrl, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`访问量服务返回 ${response.status}`);
       }
-    } catch (error) {
-      console.log('无法获取用户位置:', error);
-    }
-  }
 
-  getCurrentPosition() {
-    return new Promise((resolve, reject) => {
-      navigator.geolocation.getCurrentPosition(resolve, reject, {
-        timeout: 10000,
-        enableHighAccuracy: false
-      });
-    });
-  }
-
-  async getLocationInfo(lat, lng) {
-    try {
-      // 使用免费的地理编码服务
-      const response = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}&localityLanguage=zh`);
       const data = await response.json();
-      
-      return {
-        country: data.countryName || '未知',
-        city: data.city || data.locality || '未知',
-        countryCode: data.countryCode || 'XX',
-        lat: lat,
-        lng: lng,
-        timestamp: new Date(),
-        isCurrentUser: true
-      };
+      this.totalViews = Number.isFinite(data.views) ? data.views : null;
     } catch (error) {
-      console.error('获取位置信息失败:', error);
-      return {
-        country: '未知',
-        city: '未知',
-        countryCode: 'XX',
-        lat: lat,
-        lng: lng,
-        timestamp: new Date(),
-        isCurrentUser: true
-      };
+      this.totalViews = null;
+      console.warn('无法读取持久化访问量:', error);
     }
-  }
-
-  addCurrentVisitor(visitor) {
-    this.visitorsData.push(visitor);
-    this.updateCountryData(visitor);
   }
 
   loadRealVisitorData(realData) {
+    this.countryData = {};
+
     // 转换真实访问数据格式
     this.visitorsData = realData.map(visitor => ({
       country: visitor.country || '未知',
@@ -226,64 +178,6 @@ class VisitorWorldMap {
 
     // 统计国家数据
     this.visitorsData.forEach(visitor => {
-      this.updateCountryData(visitor);
-    });
-
-    // 如果没有真实数据，添加一些模拟数据作为展示
-    if (this.visitorsData.length === 0) {
-      this.loadMockData();
-    } else {
-      // 添加一些模拟的国际访问数据来丰富展示
-      this.addMockInternationalData();
-    }
-  }
-
-  addMockInternationalData() {
-    const internationalVisitors = [
-      { country: '美国', city: '旧金山', countryCode: 'US', lat: 37.7749, lng: -122.4194, visits: 15 },
-      { country: '英国', city: '伦敦', countryCode: 'GB', lat: 51.5074, lng: -0.1278, visits: 8 },
-      { country: '德国', city: '柏林', countryCode: 'DE', lat: 52.5200, lng: 13.4050, visits: 12 },
-      { country: '日本', city: '东京', countryCode: 'JP', lat: 35.6762, lng: 139.6503, visits: 22 },
-      { country: '新加坡', city: '新加坡', countryCode: 'SG', lat: 1.3521, lng: 103.8198, visits: 6 }
-    ];
-
-    // 随机添加一些国际访问数据
-    const randomCount = Math.floor(Math.random() * 3) + 2;
-    const shuffled = internationalVisitors.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, randomCount);
-
-    selected.forEach(visitor => {
-      visitor.timestamp = new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000); // 过去7天内
-      visitor.isCurrentUser = false;
-      this.visitorsData.push(visitor);
-      this.updateCountryData(visitor);
-    });
-  }
-
-  loadMockData() {
-    // 模拟全球访问者数据
-    const mockVisitors = [
-      { country: '中国', city: '北京', countryCode: 'CN', lat: 39.9042, lng: 116.4074, visits: 156, timestamp: new Date(Date.now() - 1000 * 60 * 5) },
-      { country: '中国', city: '上海', countryCode: 'CN', lat: 31.2304, lng: 121.4737, visits: 89, timestamp: new Date(Date.now() - 1000 * 60 * 15) },
-      { country: '中国', city: '深圳', countryCode: 'CN', lat: 22.3193, lng: 114.1694, visits: 72, timestamp: new Date(Date.now() - 1000 * 60 * 8) },
-      { country: '美国', city: '纽约', countryCode: 'US', lat: 40.7128, lng: -74.0060, visits: 134, timestamp: new Date(Date.now() - 1000 * 60 * 25) },
-      { country: '美国', city: '旧金山', countryCode: 'US', lat: 37.7749, lng: -122.4194, visits: 98, timestamp: new Date(Date.now() - 1000 * 60 * 12) },
-      { country: '英国', city: '伦敦', countryCode: 'GB', lat: 51.5074, lng: -0.1278, visits: 67, timestamp: new Date(Date.now() - 1000 * 60 * 18) },
-      { country: '德国', city: '柏林', countryCode: 'DE', lat: 52.5200, lng: 13.4050, visits: 43, timestamp: new Date(Date.now() - 1000 * 60 * 30) },
-      { country: '法国', city: '巴黎', countryCode: 'FR', lat: 48.8566, lng: 2.3522, visits: 38, timestamp: new Date(Date.now() - 1000 * 60 * 22) },
-      { country: '日本', city: '东京', countryCode: 'JP', lat: 35.6762, lng: 139.6503, visits: 91, timestamp: new Date(Date.now() - 1000 * 60 * 7) },
-      { country: '韩国', city: '首尔', countryCode: 'KR', lat: 37.5665, lng: 126.9780, visits: 54, timestamp: new Date(Date.now() - 1000 * 60 * 14) },
-      { country: '新加坡', city: '新加坡', countryCode: 'SG', lat: 1.3521, lng: 103.8198, visits: 76, timestamp: new Date(Date.now() - 1000 * 60 * 20) },
-      { country: '澳大利亚', city: '悉尼', countryCode: 'AU', lat: -33.8688, lng: 151.2093, visits: 29, timestamp: new Date(Date.now() - 1000 * 60 * 35) },
-      { country: '加拿大', city: '多伦多', countryCode: 'CA', lat: 43.6532, lng: -79.3832, visits: 41, timestamp: new Date(Date.now() - 1000 * 60 * 28) },
-      { country: '巴西', city: '圣保罗', countryCode: 'BR', lat: -23.5505, lng: -46.6333, visits: 22, timestamp: new Date(Date.now() - 1000 * 60 * 45) },
-      { country: '印度', city: '班加罗尔', countryCode: 'IN', lat: 12.9716, lng: 77.5946, visits: 33, timestamp: new Date(Date.now() - 1000 * 60 * 16) }
-    ];
-
-    this.visitorsData = mockVisitors;
-    
-    // 统计国家数据
-    mockVisitors.forEach(visitor => {
       this.updateCountryData(visitor);
     });
   }
@@ -362,16 +256,17 @@ class VisitorWorldMap {
   }
 
   updateStats() {
-    const totalVisits = this.visitorsData.reduce((sum, visitor) => sum + (visitor.visits || 1), 0);
     const countriesCount = Object.keys(this.countryData).length;
-    const onlineVisitors = this.visitorsData.filter(visitor => 
-      Date.now() - visitor.timestamp.getTime() < 5 * 60 * 1000 // 5分钟内
-    ).length;
+    const currentSessions = this.visitorsData.filter(visitor => visitor.isCurrentUser).length;
 
-    // 动画更新数字
-    this.animateNumber('total-visitors', totalVisits);
+    if (this.totalViews === null) {
+      const totalVisitorsElement = document.getElementById('total-visitors');
+      if (totalVisitorsElement) totalVisitorsElement.textContent = '—';
+    } else {
+      this.animateNumber('total-visitors', this.totalViews);
+    }
     this.animateNumber('countries-count', countriesCount);
-    this.animateNumber('online-visitors', onlineVisitors);
+    this.animateNumber('online-visitors', currentSessions);
   }
 
   animateNumber(elementId, targetValue) {
@@ -435,14 +330,12 @@ class VisitorWorldMap {
       this.handleVisitorUpdate(event.detail);
     });
 
-    // 每5分钟更新一次数据
-    setInterval(() => {
-      this.loadVisitorData().then(() => {
-        this.renderMapMarkers();
+    // 跟踪脚本与地图并行加载，短暂延迟后同步一次本次访问。
+    setTimeout(() => {
+      this.loadTotalViews().then(() => {
         this.updateStats();
-        this.renderRecentVisitors();
       });
-    }, 5 * 60 * 1000);
+    }, 1500);
   }
 
   handleVisitorUpdate(data) {
