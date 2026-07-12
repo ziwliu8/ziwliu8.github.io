@@ -63,7 +63,7 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 
 - *2024.12*: &nbsp;🎉🎉 Our paper **SIGMA: Selective Gated Mamba for Sequential Recommendation** is accepted by AAAI'2025 (**CCF-A**). Sincerely thank Bro Qidong for leading the way. 
 
-# 📝 Publications 
+# 📝 First/Co-first Author Publications 
 ***Preprint***: [Conditional Memory Enhanced Item Representation for Generative Recommendation](https://arxiv.org/abs/2605.11447)
 
 ***SIGKDD'2026 ADS (CCF-A)***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
