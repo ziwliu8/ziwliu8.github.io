@@ -41,7 +41,7 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 
 
 # 🔥 News
-- *2026.07.11* One paper has been accepted by Recsys'26. Congrats to Bro Yuxuan for carrying me!
+- *2026.07.11* One paper has been accepted by **Recsys'26**. Congrats to Bro Yuxuan for carrying me!
 
 - *2026.06.21* I have received the **Student Travel Award** of KDD26.
 
