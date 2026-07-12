@@ -17,13 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Currently, I am a first-year Ph.D student in the *AML Lab* at the School of ***Data Science***, ***City University of Hong Kong***<a href='https://aml-cityu.github.io/'>. Before this, I earned my Master's degree at CityU under the supervision of ***Prof. Zhao Xiangyu***. I also obtained my Bachelor's degree in Robotics Engineering from Southeast University, where ***Prof. Gan Yahui*** and ***Prof. Li Jun*** co-supervised me. 
+Currently, I am a first-year Ph.D student in the *AML Lab* at ***City University of Hong Kong***, supervised by <a href='https://aml-cityu.github.io/'>Prof. Zhao Xiangyu</a>. Before this, I earned my Bachelor's degree in Robotics Engineering from Southeast University, where <a href='https://automation.seu.edu.cn/gyh/list.htm'><strong><em>Prof. Gan Yahui</em></strong></a> and <a href='https://automation.seu.edu.cn/lj/list.htm'><strong><em>Prof. Li Jun</em></strong></a> co-supervised me. 
 
-My research interest includes Recommender Systems, Information Retrieval and LLM. I have published several papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ'> Google Scholar citations.
-
-<p class="cv-actions">
-  <a id="generate-cv-button" class="btn btn--info" href="{{ '/cv/?print=1' | relative_url }}" target="_blank" rel="noopener">Generate CV PDF</a>
-</p>
+My research interest includes Recommender Systems, Information Retrieval and LLM. I have published several papers at the top international AI conferences with <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ'> <span id="total_cit">0</span> total Google Scholar citations</a>.
 
 # 🏷️ Service
 **Journals**
@@ -90,6 +86,3 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 # 💻 Internships
 - *2024.05 - 2024.12*, Research Assistant, Chinese University of Hong Kong (Shenzhen), China.
 
-# 🌍 Visiting Record
-
-{% include visitor-map.html %}
