@@ -40,7 +40,7 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 # 🔥 News
 - *2026.07.11* One paper has been accepted by **Recsys'26**. Congrats to Bro Yuxuan for carrying me!
 
-- *2026.06.21* I have received the **Student Travel Award** of KDD26.
+- *2026.06.21* I have received the **Student Travel Award of KDD26**.
 
 - *2026.05.17* Our Tutorial **“Tutorial on Generative Recommendation: Foundations and Frontiers”** is accepted by **KDD'26**. Great thanks for Xiaopeng for carrying me!
 
@@ -70,6 +70,7 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 ***AAAI'2025 (CCF-A)***: [SIGMA: Selected Gated Mamba for Sequential Recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33336/35491)
 
 # 🎖 Honors and Awards
+- *2026.06* ***SIGKDD'2026*** Student Travel Award and Volunteer.
 - *2025.01* ***AAAI'2025*** Travel Award and Volunteer.
 - *2024.12* Silver Medal in Kaggle (2024): LLM Prompt Recovery (***44/2175***). 
 - *2023.06* Excellent Graduation Project of Southeast University.
