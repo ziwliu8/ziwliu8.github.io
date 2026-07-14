@@ -28,6 +28,7 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 - ***ACM*** Transactions on Information Systems (***TOIS***).
  
 **Conference**
+- **SIGKDD** SIGKDD Conference on Knowledge Discovery and Data Mining (***KDD'2027 ADS track***).
 - **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2027 main track***).
 - ***ACM*** International Conference on Multimedia (***MM'2026 main track and DB track***).
 - **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2026***). 
