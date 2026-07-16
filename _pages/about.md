@@ -75,7 +75,7 @@ My research interests include Recommender Systems, Information Retrieval, and La
     </figure>
     <div class="publication-content">
       <h3 class="publication-title">Conditional Memory Enhanced Item Representation for Generative Recommendation</h3>
-      <p class="publication-authors"><strong>Ziwei Liu</strong>, Yejing Wang, Shengyu Zhou, Xinhang Li, Xiangyu Zhao</p>
+      <p class="publication-authors"><strong>Ziwei Liu<sup>*</sup></strong>, Yejing Wang<sup>*</sup>, Shengyu Zhou, Xinhang Li, Xiangyu Zhao</p>
       <p class="publication-venue"><strong>Preprint</strong>, 2026</p>
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2605.11447" target="_blank" rel="noopener">Paper</a>
@@ -92,7 +92,7 @@ My research interests include Recommender Systems, Information Retrieval, and La
     </figure>
     <div class="publication-content">
       <h3 class="publication-title">The Best of Both Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation</h3>
-      <p class="publication-authors"><strong>Ziwei Liu</strong>, Yejing Wang, Wanyu Wang, Zejian Wang, Qidong Liu, Zijian Zhang, Wei Huang, Chong Chen, Xiangyu Zhao</p>
+      <p class="publication-authors"><strong>Ziwei Liu<sup>*</sup></strong>, Yejing Wang<sup>*</sup>, Wanyu Wang, Zejian Wang, Qidong Liu, Zijian Zhang, Wei Huang, Chong Chen, Xiangyu Zhao</p>
       <p class="publication-venue">ACM SIGKDD Conference on Knowledge Discovery and Data Mining, ADS Track (KDD), 2026 · <strong>CCF-A</strong></p>
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2512.10388" target="_blank" rel="noopener">Paper</a>
@@ -109,7 +109,7 @@ My research interests include Recommender Systems, Information Retrieval, and La
     </figure>
     <div class="publication-content">
       <h3 class="publication-title">LLM-EDT: Large Language Models Enhanced Cross-domain Sequential Recommendation with Dual-phase Training</h3>
-      <p class="publication-authors"><strong>Ziwei Liu</strong>, Qidong Liu, Wanyu Wang, Yejing Wang, Pengyue Jia, Tong Xu, Wei Huang, Chong Chen, Xiangyu Zhao</p>
+      <p class="publication-authors"><strong>Ziwei Liu<sup>*</sup></strong>, Qidong Liu<sup>*</sup>, Wanyu Wang, Yejing Wang, Pengyue Jia, Tong Xu, Wei Huang, Chong Chen, Xiangyu Zhao</p>
       <p class="publication-venue">ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2026 · <strong>CCF-A</strong></p>
       <div class="publication-links">
         <a href="https://arxiv.org/abs/2511.19931" target="_blank" rel="noopener">Paper</a>
@@ -126,7 +126,7 @@ My research interests include Recommender Systems, Information Retrieval, and La
     </figure>
     <div class="publication-content">
       <h3 class="publication-title">SIGMA: Selective Gated Mamba for Sequential Recommendation</h3>
-      <p class="publication-authors"><strong>Ziwei Liu</strong>, Qidong Liu, Yejing Wang, Wanyu Wang, Pengyue Jia, Maolin Wang, Zitao Liu, Yi Chang, Xiangyu Zhao</p>
+      <p class="publication-authors"><strong>Ziwei Liu<sup>*</sup></strong>, Qidong Liu<sup>*</sup>, Yejing Wang, Wanyu Wang, Pengyue Jia, Maolin Wang, Zitao Liu, Yi Chang, Xiangyu Zhao</p>
       <p class="publication-venue">AAAI Conference on Artificial Intelligence (AAAI), 2025 · <strong>CCF-A</strong></p>
       <div class="publication-links">
         <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33336" target="_blank" rel="noopener">Paper</a>
