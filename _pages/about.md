@@ -38,7 +38,7 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 
 
 # 🔥 News
-- *2026.07.11* One paper has been accepted by **Recsys'26**. Congrats to Bro Yuxuan for carrying me!
+- *2026.07.11* One paper has been accepted by **Recsys'26**. Congrats to Bro Yuxuan!
 
 - *2026.06.21* I have received the **Student Travel Award of KDD26**.
 
@@ -60,14 +60,77 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 
 - *2024.12*: &nbsp;🎉🎉 Our paper **SIGMA: Selective Gated Mamba for Sequential Recommendation** is accepted by AAAI'2025 (**CCF-A**). Sincerely thank Bro Qidong for leading the way. 
 
-# 📝 First/Co-first Author Publications 
-***Preprint***: [Conditional Memory Enhanced Item Representation for Generative Recommendation](https://arxiv.org/abs/2605.11447)
+# 📝 First/Co-first Author Publications
 
-***SIGKDD'2026 ADS (CCF-A)***: [The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation](http://arxiv.org/abs/2512.10388)
+<div class="publication-list">
+  <article class="publication-card">
+    <figure class="publication-figure">
+      <img src="/images/publications/comeir.png" alt="Overview of the ComeIR framework" loading="lazy">
+      <figcaption>ComeIR reconstructs item-aware inputs and restores token-level evidence with dual-level conditional memory.</figcaption>
+    </figure>
+    <div class="publication-content">
+      <h3 class="publication-title">Conditional Memory Enhanced Item Representation for Generative Recommendation</h3>
+      <p class="publication-authors"><strong>Ziwei Liu</strong>, Yejing Wang, Shengyu Zhou, Xinhang Li, Xiangyu Zhao</p>
+      <p class="publication-venue"><strong>Preprint</strong>, 2026</p>
+      <div class="publication-links">
+        <a href="https://arxiv.org/abs/2605.11447" target="_blank" rel="noopener">Paper</a>
+        <span class="publication-link-disabled" title="Code will be released publicly">Code coming soon</span>
+      </div>
+      <p class="publication-tldr"><strong>TL;DR:</strong> ComeIR uses token scoring and dual-level Engram memories to preserve item identity and SID structure, then reuses the memories during decoding to bridge item-level inputs and token-level generation.</p>
+    </div>
+  </article>
 
-***SIGIR'2026 (CCF-A)***: [LLM-EDT: Large Language Model Enhanced Cross-domain Sequential Recommendation with Dual-phase Training](https://arxiv.org/abs/2511.19931)
+  <article class="publication-card">
+    <figure class="publication-figure">
+      <img src="/images/publications/h2rec.png" alt="Overview of the H2Rec framework" loading="lazy">
+      <figcaption>H²Rec harmonizes multi-granular Semantic IDs with unique collaborative Hash IDs through dual-branch modeling.</figcaption>
+    </figure>
+    <div class="publication-content">
+      <h3 class="publication-title">The Best of Both Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation</h3>
+      <p class="publication-authors"><strong>Ziwei Liu</strong>, Yejing Wang, Wanyu Wang, Zejian Wang, Qidong Liu, Zijian Zhang, Wei Huang, Chong Chen, Xiangyu Zhao</p>
+      <p class="publication-venue">ACM SIGKDD Conference on Knowledge Discovery and Data Mining, ADS Track (KDD), 2026 · <strong>CCF-A</strong></p>
+      <div class="publication-links">
+        <a href="https://arxiv.org/abs/2512.10388" target="_blank" rel="noopener">Paper</a>
+        <a href="https://github.com/Applied-Machine-Learning-Lab/KDD26_H2Rec" target="_blank" rel="noopener">Code</a>
+      </div>
+      <p class="publication-tldr"><strong>TL;DR:</strong> H²Rec combines the semantic generalization of SIDs with the collaborative uniqueness of HIDs, balancing recommendation quality for both head and long-tail items.</p>
+    </div>
+  </article>
 
-***AAAI'2025 (CCF-A)***: [SIGMA: Selected Gated Mamba for Sequential Recommendation](https://ojs.aaai.org/index.php/AAAI/article/view/33336/35491)
+  <article class="publication-card">
+    <figure class="publication-figure">
+      <img src="/images/publications/llm-edt.png" alt="Overview of the LLM-EDT framework" loading="lazy">
+      <figcaption>LLM-EDT couples transferable item augmentation, dual-phase training, and domain-aware user profiling.</figcaption>
+    </figure>
+    <div class="publication-content">
+      <h3 class="publication-title">LLM-EDT: Large Language Models Enhanced Cross-domain Sequential Recommendation with Dual-phase Training</h3>
+      <p class="publication-authors"><strong>Ziwei Liu</strong>, Qidong Liu, Wanyu Wang, Yejing Wang, Pengyue Jia, Tong Xu, Wei Huang, Chong Chen, Xiangyu Zhao</p>
+      <p class="publication-venue">ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2026 · <strong>CCF-A</strong></p>
+      <div class="publication-links">
+        <a href="https://arxiv.org/abs/2511.19931" target="_blank" rel="noopener">Paper</a>
+        <a href="https://github.com/Applied-Machine-Learning-Lab/SIGIR26_LLM-EDT" target="_blank" rel="noopener">Code</a>
+      </div>
+      <p class="publication-tldr"><strong>TL;DR:</strong> LLM-EDT addresses domain imbalance, noisy augmentation, and rough profiling via transferable item augmentation, domain-specific fine-tuning, and adaptive domain-aware preference aggregation.</p>
+    </div>
+  </article>
+
+  <article class="publication-card">
+    <figure class="publication-figure">
+      <img src="/images/publications/sigma.png" alt="Overview of the SIGMA framework" loading="lazy">
+      <figcaption>SIGMA enhances Mamba with partial bidirectional modeling, selective gating, and short-term feature extraction.</figcaption>
+    </figure>
+    <div class="publication-content">
+      <h3 class="publication-title">SIGMA: Selective Gated Mamba for Sequential Recommendation</h3>
+      <p class="publication-authors"><strong>Ziwei Liu</strong>, Qidong Liu, Yejing Wang, Wanyu Wang, Pengyue Jia, Maolin Wang, Zitao Liu, Yi Chang, Xiangyu Zhao</p>
+      <p class="publication-venue">AAAI Conference on Artificial Intelligence (AAAI), 2025 · <strong>CCF-A</strong></p>
+      <div class="publication-links">
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33336" target="_blank" rel="noopener">Paper</a>
+        <a href="https://github.com/ziwliu8/SIGMA" target="_blank" rel="noopener">Code</a>
+      </div>
+      <p class="publication-tldr"><strong>TL;DR:</strong> SIGMA equips Mamba with partially flipped bidirectional modeling, an input-dependent selective gate, and a feature-extracting GRU for efficient long- and short-term sequential recommendation.</p>
+    </div>
+  </article>
+</div>
 
 # 🎖 Honors and Awards
 - *2026.06* ***SIGKDD'2026*** Student Travel Award and Volunteer.

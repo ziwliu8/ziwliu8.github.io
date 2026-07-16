@@ -87,6 +87,122 @@
 
 }
 
+.publication-list {
+    margin: 0.75rem 0 2.25rem;
+}
+
+.publication-card {
+    align-items: center;
+    border-bottom: 1px solid #e8edf3;
+    display: grid;
+    gap: 1.4rem;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 1.65rem 0;
+
+    &:first-child {
+        padding-top: 0.75rem;
+    }
+
+    @include breakpoint($medium) {
+        grid-template-columns: minmax(210px, 34%) minmax(0, 1fr);
+    }
+}
+
+.publication-figure {
+    background: #f8fafc;
+    border: 1px solid #e5eaf0;
+    border-radius: 10px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0.45rem;
+
+    img {
+        aspect-ratio: 16 / 10;
+        display: block;
+        height: auto;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    figcaption {
+        color: #64748b;
+        font-size: 0.68rem;
+        line-height: 1.35;
+        padding: 0.45rem 0.35rem 0.15rem;
+        text-align: center;
+    }
+}
+
+.publication-content {
+    min-width: 0;
+}
+
+.publication-title {
+    color: #243447;
+    font-size: 1.02rem;
+    line-height: 1.42;
+    margin: 0 0 0.35rem;
+}
+
+.publication-authors,
+.publication-venue,
+.publication-tldr {
+    font-size: 0.82rem;
+    line-height: 1.55;
+    margin: 0.28rem 0;
+}
+
+.publication-authors {
+    color: #52606d;
+}
+
+.publication-venue {
+    color: #334e68;
+}
+
+.publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0.65rem 0;
+
+    a,
+    .publication-link-disabled {
+        border: 1px solid #b8cbe0;
+        border-radius: 999px;
+        display: inline-flex;
+        font-size: 0.73rem;
+        font-weight: 600;
+        line-height: 1;
+        padding: 0.42rem 0.72rem;
+        text-decoration: none;
+    }
+
+    a {
+        color: #245b91;
+        transition: background-color 0.15s ease, border-color 0.15s ease;
+
+        &:hover {
+            background: #edf6ff;
+            border-color: #6fa3d5;
+            text-decoration: none;
+        }
+    }
+
+    .publication-link-disabled {
+        border-color: #d8dee6;
+        color: #8996a5;
+    }
+}
+
+.publication-tldr {
+    color: #374151;
+
+    strong {
+        color: #1f2937;
+    }
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 
