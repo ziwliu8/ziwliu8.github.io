@@ -10,7 +10,7 @@ class VisitorWorldMap {
     this.visitorsData = [];
     this.countryData = {};
     this.totalViews = null;
-    this.viewsApiUrl = 'https://page-views-api.ratneshc.com/api/v1/views?site=ziwliu8.github.io&path=%2F';
+    this.currentVisitCounted = false;
     this.init();
   }
 
@@ -24,9 +24,6 @@ class VisitorWorldMap {
       
       // 加载访问者数据
       await this.loadVisitorData();
-
-      // 从持久化服务读取全站访问量
-      await this.loadTotalViews();
       
       // 渲染地图标记
       this.renderMapMarkers();
@@ -116,65 +113,25 @@ class VisitorWorldMap {
   }
 
   async loadVisitorData() {
-    this.visitorsData = [];
-    this.countryData = {};
-
-    if (typeof window.getVisitorMapData === 'function') {
-      const realData = window.getVisitorMapData();
-      if (realData && realData.length > 0) {
-        this.loadRealVisitorData(realData);
-      }
-    }
+    const data = await window.visitorTracker.trackVisit();
+    this.applyStatsData(data);
+    this.currentVisitCounted = data.counted === true;
   }
 
-  async loadTotalViews() {
-    try {
-      const response = await fetch(this.viewsApiUrl, { cache: 'no-store' });
-      if (!response.ok) {
-        throw new Error(`访问量服务返回 ${response.status}`);
-      }
-
-      const data = await response.json();
-      this.totalViews = Number.isFinite(data.views) ? data.views : null;
-    } catch (error) {
-      this.totalViews = null;
-      console.warn('无法读取持久化访问量:', error);
-    }
-  }
-
-  loadRealVisitorData(realData) {
+  applyStatsData(data) {
     this.countryData = {};
-
-    // 转换真实访问数据格式
-    this.visitorsData = realData.map(visitor => ({
-      country: visitor.country || '未知',
-      city: visitor.city || '未知',
-      countryCode: visitor.countryCode || 'XX',
-      lat: visitor.latitude || 0,
-      lng: visitor.longitude || 0,
-      visits: 1, // 每个访问记录代表一次访问
-      timestamp: new Date(visitor.timestamp || Date.now()),
-      isCurrentUser: visitor.sessionId === (window.visitorTracker?.sessionId)
+    this.totalViews = data.total;
+    this.countriesCount = Number(data.countries) || 0;
+    this.visitorsData = data.locations.map(location => ({
+      country: location.country || '未知',
+      city: location.city || '未知',
+      countryCode: location.countryCode || 'XX',
+      lat: location.latitude,
+      lng: location.longitude,
+      visits: Number(location.visits) || 0,
+      timestamp: new Date(Number(location.lastVisit) || 0),
+      isCurrentUser: false
     }));
-
-    // 合并相同城市的访问
-    const cityVisits = {};
-    this.visitorsData.forEach(visitor => {
-      const key = `${visitor.city}-${visitor.country}`;
-      if (cityVisits[key]) {
-        cityVisits[key].visits += 1;
-        // 保持最新的时间戳
-        if (visitor.timestamp > cityVisits[key].timestamp) {
-          cityVisits[key].timestamp = visitor.timestamp;
-          cityVisits[key].isCurrentUser = visitor.isCurrentUser;
-        }
-      } else {
-        cityVisits[key] = { ...visitor };
-      }
-    });
-
-    // 转换回数组格式
-    this.visitorsData = Object.values(cityVisits);
 
     // 统计国家数据
     this.visitorsData.forEach(visitor => {
@@ -202,6 +159,10 @@ class VisitorWorldMap {
 
     // 为每个访问者添加标记
     this.visitorsData.forEach(visitor => {
+      if (!Number.isFinite(visitor.lat) || !Number.isFinite(visitor.lng)) {
+        return;
+      }
+
       const markerColor = this.getMarkerColor(visitor.visits || 1);
       const markerSize = this.getMarkerSize(visitor.visits || 1);
 
@@ -217,8 +178,8 @@ class VisitorWorldMap {
       // 添加弹出信息
       const popupContent = `
         <div style="text-align: center; min-width: 150px;">
-          <h4 style="margin: 0 0 8px 0; color: #2d3748;">${visitor.city}</h4>
-          <p style="margin: 0 0 4px 0; color: #4a5568; font-size: 0.9em;">${visitor.country}</p>
+          <h4 style="margin: 0 0 8px 0; color: #2d3748;">${this.escapeHtml(visitor.city)}</h4>
+          <p style="margin: 0 0 4px 0; color: #4a5568; font-size: 0.9em;">${this.escapeHtml(visitor.country)}</p>
           <p style="margin: 0 0 4px 0; color: #718096; font-size: 0.8em;">访问次数: ${visitor.visits || 1}</p>
           <p style="margin: 0; color: #a0aec0; font-size: 0.75em;">${this.formatTime(visitor.timestamp)}</p>
         </div>
@@ -233,6 +194,15 @@ class VisitorWorldMap {
         this.addPulseAnimation(marker);
       }
     });
+
+    const unlocatedVisits = this.visitorsData
+      .filter(visitor => !Number.isFinite(visitor.lat) || !Number.isFinite(visitor.lng))
+      .reduce((sum, visitor) => sum + visitor.visits, 0);
+    const unlocatedElement = document.getElementById('unlocated-visitors');
+    if (unlocatedElement) {
+      unlocatedElement.hidden = unlocatedVisits === 0;
+      unlocatedElement.textContent = `未定位访问：${unlocatedVisits}`;
+    }
   }
 
   getMarkerColor(visits) {
@@ -256,17 +226,14 @@ class VisitorWorldMap {
   }
 
   updateStats() {
-    const countriesCount = Object.keys(this.countryData).length;
-    const currentSessions = this.visitorsData.filter(visitor => visitor.isCurrentUser).length;
-
     if (this.totalViews === null) {
       const totalVisitorsElement = document.getElementById('total-visitors');
       if (totalVisitorsElement) totalVisitorsElement.textContent = '—';
     } else {
       this.animateNumber('total-visitors', this.totalViews);
     }
-    this.animateNumber('countries-count', countriesCount);
-    this.animateNumber('online-visitors', currentSessions);
+    this.animateNumber('countries-count', this.countriesCount);
+    this.animateNumber('online-visitors', this.currentVisitCounted ? 1 : 0);
   }
 
   animateNumber(elementId, targetValue) {
@@ -303,7 +270,7 @@ class VisitorWorldMap {
 
     recentVisitorsList.innerHTML = recentVisitors.map(visitor => `
       <div class="visitor-item">
-        <div class="visitor-location">${visitor.city}, ${visitor.country}</div>
+        <div class="visitor-location">${this.escapeHtml(visitor.city)}, ${this.escapeHtml(visitor.country)}</div>
         <div class="visitor-time">${this.formatTime(visitor.timestamp)}</div>
       </div>
     `).join('');
@@ -325,27 +292,24 @@ class VisitorWorldMap {
   }
 
   startAutoUpdate() {
-    // 监听访问者位置更新事件
-    document.addEventListener('visitorLocationUpdate', (event) => {
-      this.handleVisitorUpdate(event.detail);
-    });
-
-    // 跟踪脚本与地图并行加载，短暂延迟后同步一次本次访问。
-    setTimeout(() => {
-      this.loadTotalViews().then(() => {
+    const interval = window.VisitorMapConfig?.data?.updateInterval || 5 * 60 * 1000;
+    setInterval(async () => {
+      try {
+        const data = await window.visitorTracker.getStats();
+        this.applyStatsData(data);
+        this.renderMapMarkers();
         this.updateStats();
-      });
-    }, 1500);
+        this.renderRecentVisitors();
+      } catch (error) {
+        console.warn('无法刷新访问统计:', error);
+      }
+    }, interval);
   }
 
-  handleVisitorUpdate(data) {
-    // 实时更新访问者数据
-    if (data.allVisitors) {
-      this.loadRealVisitorData(data.allVisitors);
-      this.renderMapMarkers();
-      this.updateStats();
-      this.renderRecentVisitors();
-    }
+  escapeHtml(value) {
+    const element = document.createElement('div');
+    element.textContent = String(value);
+    return element.innerHTML;
   }
 }
 

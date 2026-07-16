@@ -14,12 +14,8 @@ window.VisitorMapConfig = {
   
   // 数据设置
   data: {
-    enableRealTracking: true,    // 启用真实访问者追踪
-    enableMockData: false,       // 禁止使用模拟访问数据
-    maxStoredVisitors: 100,      // 最大存储访问者数量
-    updateInterval: 5 * 60 * 1000, // 更新间隔（毫秒）
-    locationTimeout: 10000,      // 地理位置获取超时时间
-    enableGeolocation: true      // 启用地理位置获取
+    apiUrl: "https://ziwliu8-visitor-stats.ziwliu8.workers.dev",
+    updateInterval: 5 * 60 * 1000 // 更新间隔（毫秒）
   },
   
   // 样式设置
@@ -37,14 +33,6 @@ window.VisitorMapConfig = {
     }
   },
   
-  // 隐私设置
-  privacy: {
-    enableLocationSharing: true,  // 允许位置分享
-    anonymizeData: false,         // 匿名化数据
-    storeLocally: true,          // 本地存储数据
-    respectDoNotTrack: true      // 尊重Do Not Track设置
-  },
-  
   // 显示设置
   display: {
     showStats: true,           // 显示统计信息
@@ -54,11 +42,4 @@ window.VisitorMapConfig = {
     showCurrentUser: true      // 高亮当前用户
   }
 };
-
-// 检查用户的Do Not Track设置
-if (navigator.doNotTrack === '1' && window.VisitorMapConfig.privacy.respectDoNotTrack) {
-  window.VisitorMapConfig.data.enableRealTracking = false;
-  window.VisitorMapConfig.privacy.storeLocally = false;
-  console.log('检测到Do Not Track设置，已禁用访问者追踪');
-}
 </script>

@@ -12,17 +12,18 @@
       </span>
       <span class="stat-item">
         <span class="stat-number" id="countries-count">0</span>
-        <span class="stat-label">本地地区</span>
+        <span class="stat-label">已定位国家</span>
       </span>
       <span class="stat-item">
         <span class="stat-number" id="online-visitors">0</span>
-        <span class="stat-label">当前会话</span>
+        <span class="stat-label">本次计入</span>
       </span>
     </div>
   </div>
   
   <div class="visitor-map-wrapper">
     <div id="visitor-world-map" class="visitor-map"></div>
+    <div id="unlocated-visitors" class="unlocated-visitors" hidden></div>
     <div class="map-legend">
       <div class="legend-item">
         <span class="legend-color low"></span>
@@ -46,16 +47,6 @@
     </div>
   </div>
 </div>
-
-<!-- 持久化首页访问量；同一访客 30 分钟内只计一次 -->
-{% if jekyll.environment == "production" %}
-<script
-  src="https://page-views-api.ratneshc.com/script"
-  data-site="ziwliu8.github.io"
-  data-path="/"
-  defer>
-</script>
-{% endif %}
 
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -127,6 +118,18 @@
   background: #f6f9fc;
   height: 180px;
   width: 100%;
+}
+
+.unlocated-visitors {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 5px;
+  bottom: 0.45rem;
+  color: #4a5568;
+  font-size: 0.58rem;
+  left: 0.45rem;
+  padding: 0.2rem 0.35rem;
+  position: absolute;
+  z-index: 500;
 }
 
 .map-legend,

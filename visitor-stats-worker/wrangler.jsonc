@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ziwliu8-visitor-stats",
+  "main": "src/index.js",
+  "compatibility_date": "2026-04-03",
+  "workers_dev": true,
+  "preview_urls": false,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ziwliu8-visitor-stats",
+      "database_id": "df80c070-92c9-4649-89ea-7ecd97d053a3",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
