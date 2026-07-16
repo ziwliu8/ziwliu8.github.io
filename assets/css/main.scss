@@ -211,7 +211,7 @@
     grid-template-columns: minmax(0, 1fr);
 
     @include breakpoint($medium) {
-        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
     }
 }
 

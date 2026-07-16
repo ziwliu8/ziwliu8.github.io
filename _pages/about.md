@@ -41,30 +41,6 @@ My research interests include Recommender Systems, Information Retrieval, and La
   </div>
 </div>
 
-# 🏷️ Service
-<div class="compact-section service-grid">
-  <div>
-    <h3>Journals</h3>
-    <ul>
-      <li><strong>IEEE</strong> Transactions on Knowledge and Data Engineering (<strong>TKDE</strong>)</li>
-      <li><strong>ACM</strong> Transactions on Knowledge Discovery from Data (<strong>TKDD</strong>)</li>
-      <li><strong>ACM</strong> Transactions on Information Systems (<strong>TOIS</strong>)</li>
-    </ul>
-  </div>
-  <div>
-    <h3>Conferences</h3>
-    <ul>
-      <li>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD 2027</strong>), ADS Track</li>
-      <li>AAAI Conference on Artificial Intelligence (<strong>AAAI 2027</strong>), Main Track</li>
-      <li>ACM International Conference on Multimedia (<strong>MM 2026</strong>), Main and DB Tracks</li>
-      <li>ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR 2026</strong>)</li>
-      <li>AAAI Conference on Artificial Intelligence (<strong>AAAI 2026</strong>), Main and AIA Tracks</li>
-      <li>ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR 2025</strong>)</li>
-      <li>ACM Conference on Recommender Systems (<strong>RecSys 2025</strong>)</li>
-    </ul>
-  </div>
-</div>
-
 # 📝 First/Co-first Author Publications
 
 <div class="publication-list">
@@ -137,21 +113,44 @@ My research interests include Recommender Systems, Information Retrieval, and La
   </article>
 </div>
 
+# 💬 Tutorials
+- *2026.08* · **KDD 2026 (CCF-A)** · [Tutorial on Generative Recommendation: Foundations and Frontiers](https://github.com/Kuaishou-RecModel/Tri-Decoupled-GenRec)
+- *2025.08* · **KDD 2025 (CCF-A)** · [Large Language Model Enhanced Recommender Systems: Taxonomy, Trend, Applications, and Future Directions](https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
+
 # 🎖 Honors and Awards
 - *2026.06* · **KDD 2026** Student Travel Award and Volunteer
 - *2025.01* · **AAAI 2025** Travel Award and Volunteer
 - *2024.12* · Silver Medal, Kaggle LLM Prompt Recovery (**44/2,175**)
 - *2023.06* · Excellent Graduation Project, Southeast University
 
+# 🏷️ Service
+<div class="compact-section service-grid">
+  <div>
+    <h3>Conferences</h3>
+    <ul>
+      <li>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD 2027</strong>), ADS Track</li>
+      <li>AAAI Conference on Artificial Intelligence (<strong>AAAI 2027</strong>), Main Track</li>
+      <li>ACM International Conference on Multimedia (<strong>MM 2026</strong>), Main and DB Tracks</li>
+      <li>ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR 2026</strong>)</li>
+      <li>AAAI Conference on Artificial Intelligence (<strong>AAAI 2026</strong>), Main and AIA Tracks</li>
+      <li>ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR 2025</strong>)</li>
+      <li>ACM Conference on Recommender Systems (<strong>RecSys 2025</strong>)</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Journals</h3>
+    <ul>
+      <li><strong>IEEE</strong> Transactions on Knowledge and Data Engineering (<strong>TKDE</strong>)</li>
+      <li><strong>ACM</strong> Transactions on Knowledge Discovery from Data (<strong>TKDD</strong>)</li>
+      <li><strong>ACM</strong> Transactions on Information Systems (<strong>TOIS</strong>)</li>
+    </ul>
+  </div>
+</div>
+
 # 📖 Education
 - *2025.09–Present* · Ph.D. in Data Science, City University of Hong Kong
 - *2023.09–2024.10* · M.E. in Data Science, City University of Hong Kong
 - *2019.09–2023.06* · B.E. in Robotics Engineering, Southeast University
-
-# 💬 Tutorial
-- *2026.08* · **KDD 2026 (CCF-A)** · [Tutorial on Generative Recommendation: Foundations and Frontiers](https://github.com/Kuaishou-RecModel/Tri-Decoupled-GenRec)
-- *2025.08* · **KDD 2025 (CCF-A)** · [Large Language Model Enhanced Recommender Systems: Taxonomy, Trend, Applications, and Future Directions](https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
-
 
 # 💻 Experience
 - *2024.05–2024.12* · Research Assistant, Chinese University of Hong Kong, Shenzhen
