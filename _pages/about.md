@@ -22,6 +22,7 @@ Currently, I am a first-year Ph.D. student in the *AML Lab* at ***City Universit
 My research interests include Recommender Systems, Information Retrieval, and Large Language Models. I have published several papers at top international AI conferences, with <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ&hl=zh-CN'><span id="total_cit">82</span> total Google Scholar citations</a>.
 
 # 🔥 News
+<p class="news-scroll-hint">Latest updates · scroll for earlier news ↓</p>
 <div class="news-scroll-shell">
   <div class="news-list" role="region" aria-label="Latest news; scroll for earlier updates" tabindex="0">
     <ul>
@@ -53,13 +54,13 @@ My research interests include Recommender Systems, Information Retrieval, and La
   <div>
     <h3>Conferences</h3>
     <ul>
-      <li><strong>KDD 2027</strong>, ADS Track</li>
-      <li><strong>AAAI 2027</strong>, Main Track</li>
-      <li><strong>MM 2026</strong>, Main and DB Tracks</li>
-      <li><strong>SIGIR 2026</strong></li>
-      <li><strong>AAAI 2026</strong>, Main and AIA Tracks</li>
-      <li><strong>SIGIR 2025</strong></li>
-      <li><strong>RecSys 2025</strong></li>
+      <li>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD 2027</strong>), ADS Track</li>
+      <li>AAAI Conference on Artificial Intelligence (<strong>AAAI 2027</strong>), Main Track</li>
+      <li>ACM International Conference on Multimedia (<strong>MM 2026</strong>), Main and DB Tracks</li>
+      <li>ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR 2026</strong>)</li>
+      <li>AAAI Conference on Artificial Intelligence (<strong>AAAI 2026</strong>), Main and AIA Tracks</li>
+      <li>ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR 2025</strong>)</li>
+      <li>ACM Conference on Recommender Systems (<strong>RecSys 2025</strong>)</li>
     </ul>
   </div>
 </div>

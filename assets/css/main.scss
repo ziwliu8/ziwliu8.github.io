@@ -87,6 +87,13 @@
 
 }
 
+.news-scroll-hint {
+    color: #6b7c8f;
+    font-size: 0.75rem !important;
+    margin: -0.35rem 0 0.45rem !important;
+    text-align: right;
+}
+
 .news-scroll-shell {
     position: relative;
 
@@ -118,8 +125,8 @@
     background: #fbfdff;
     border: 1px solid #e4ebf3;
     border-radius: 12px;
-    max-height: 31rem;
-    overflow-y: auto;
+    height: 24rem;
+    overflow-y: scroll;
     overscroll-behavior: contain;
     padding: 0.55rem 0.85rem 1rem;
     scrollbar-color: #9eb8d3 transparent;
@@ -347,7 +354,7 @@
     }
 
     .news-list {
-        max-height: 27rem;
+        height: 26rem;
         padding-left: 0.7rem;
         padding-right: 0.55rem;
 
