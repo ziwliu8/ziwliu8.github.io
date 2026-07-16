@@ -17,48 +17,52 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Currently, I am a first-year Ph.D student in the *AML Lab* at ***City University of Hong Kong***, supervised by <a href='https://aml-cityu.github.io/'>Prof. Zhao Xiangyu</a>. Before this, I earned my Bachelor's degree in Robotics Engineering from Southeast University, where <a href='https://automation.seu.edu.cn/gyh/list.htm'><strong><em>Prof. Gan Yahui</em></strong></a> and <a href='https://automation.seu.edu.cn/lj/list.htm'><strong><em>Prof. Li Jun</em></strong></a> co-supervised me. 
+Currently, I am a first-year Ph.D. student in the *AML Lab* at ***City University of Hong Kong***, supervised by <a href='https://aml-cityu.github.io/'>Prof. Zhao Xiangyu</a>. Before this, I earned my Bachelor's degree in Robotics Engineering from Southeast University, where <a href='https://automation.seu.edu.cn/gyh/list.htm'><strong><em>Prof. Gan Yahui</em></strong></a> and <a href='https://automation.seu.edu.cn/lj/list.htm'><strong><em>Prof. Li Jun</em></strong></a> co-supervised me.
 
-My research interest includes Recommender Systems, Information Retrieval and LLM. I have published several papers at the top international AI conferences with <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ&hl=zh-CN'><span id="total_cit">82</span> total Google Scholar citations</a>.
-
-# 🏷️ Service
-**Journals**
-- ***IEEE*** Transactions on Knowledge and Data Engineering (***TKDE***).
-- ***ACM*** Transactions on Knowledge Discovery from Data (***TKDD***).
-- ***ACM*** Transactions on Information Systems (***TOIS***).
- 
-**Conference**
-- **SIGKDD** SIGKDD Conference on Knowledge Discovery and Data Mining (***KDD'2027 ADS track***).
-- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2027 main track***).
-- ***ACM*** International Conference on Multimedia (***MM'2026 main track and DB track***).
-- **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2026***). 
-- **AAAI** Association for the Advanced Artificial Intelligence (***AAAI'2026 main track and AIA track***).
-- **ACM** SIGIR Conference on Research and Development in Information Retrieval (***SIGIR'2025***). 
-- **ACM** Conference on Recommender Systems (***Recsys'2025***).
-
+My research interests include Recommender Systems, Information Retrieval, and Large Language Models. I have published several papers at top international AI conferences, with <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ&hl=zh-CN'><span id="total_cit">82</span> total Google Scholar citations</a>.
 
 # 🔥 News
-- *2026.07.11* One paper has been accepted by **Recsys'26**. Congrats to Bro Yuxuan!
+<div class="news-scroll-shell">
+  <div class="news-list" role="region" aria-label="Latest news; scroll for earlier updates" tabindex="0">
+    <ul>
+      <li><time datetime="2026-07-11">2026.07.11</time><span>One paper was accepted by <strong>RecSys 2026</strong>. Congratulations to Yuxuan!</span></li>
+      <li><time datetime="2026-06-21">2026.06.21</time><span>I received the <strong>KDD 2026 Student Travel Award</strong>.</span></li>
+      <li><time datetime="2026-05-17">2026.05.17</time><span>Our tutorial, <strong>“Tutorial on Generative Recommendation: Foundations and Frontiers,”</strong> was accepted by <strong>KDD 2026</strong>. Many thanks to Xiaopeng for leading this work!</span></li>
+      <li><time datetime="2026-05-17">2026.05.17</time><span>Our paper <strong>H²Rec</strong> was accepted by <strong>KDD 2026 ADS Track (CCF-A)</strong>. It has been deployed on RedNote (Xiaohongshu), achieving <strong>ADVV +0.89% and COST +0.59%</strong>. Many thanks to Yejing and Qidong!</span></li>
+      <li><time datetime="2026-05-11">2026.05.11</time><span>Our new paper <strong>ComeIR</strong> was released on arXiv. It identifies a representation bottleneck in decoupled two-stage generative recommendation and introduces Engram memory for improved input construction and decoding.</span></li>
+      <li><time datetime="2026-04-03">2026.04.03</time><span>Our paper <strong>LLM-EDT</strong> was accepted by <strong>SIGIR 2026 (CCF-A)</strong>. Many thanks to Qidong and Yejing!</span></li>
+      <li><time datetime="2026-01-14">2026.01.14</time><span>One paper was accepted by <strong>WWW 2026 (CCF-A)</strong>. Many thanks to Yejing!</span></li>
+      <li><time datetime="2025-12-11">2025.12.11</time><span>Our new paper <strong>H²Rec</strong> was released on arXiv. It harmonizes Semantic IDs with Hash IDs to address collaborative overwhelming.</span></li>
+      <li><time datetime="2025-11-19">2025.11.19</time><span>Our new paper <strong>LLM-EDT</strong> was released on arXiv. It introduces a general cross-domain sequential recommender for domain imbalance and rough profiling.</span></li>
+      <li><time datetime="2025-01">2025.01</time><span>I received the <strong>AAAI 2025 Travel Award</strong>.</span></li>
+      <li><time datetime="2024-12">2024.12</time><span>Our paper <strong>SIGMA: Selective Gated Mamba for Sequential Recommendation</strong> was accepted by <strong>AAAI 2025 (CCF-A)</strong>. Many thanks to Qidong for leading this work!</span></li>
+    </ul>
+  </div>
+</div>
 
-- *2026.06.21* I have received the **Student Travel Award of KDD26**.
-
-- *2026.05.17* Our Tutorial **“Tutorial on Generative Recommendation: Foundations and Frontiers”** is accepted by **KDD'26**. Great thanks for Xiaopeng for carrying me!
-
-- *2026.05.17* Our Paper **H2Rec** is accepted by **KDD'26 ADS Track (CCF-A)**, which has been applied to **Red Book (Xiao Hong Shu)** and **achieved commercial outcomes (ADVV + 0.89% and COST +0.59%)**. Great thanks for help and suggestion from Bro Yejing and Qidong!
-
-- *2026.05.11* Our New Paper ComeIR is preprinted on Arxiv, which identify the bottleneck of the current decoupled two stage GR framework and leverage the engram memory for better GR input and decoding.
-
-- *2026.04.03* Our Paper **LLM-EDT** is accepted by **SIGIR'26 (CCF-A)**. Thanks for help and guidance from Bro Qidong and Yejing!
-
-- *2026.01.14* One Paper got accepted by **WWW'26 (CCF-A)**. Thank Bro Yejing for carrying me!**
-
-- *2025.12.11* Our New paper H^2Rec is preprinted on Arxiv, which harmonizing the semantic IDs with Hash IDs to address the collaborative overwhelming problem.
-
-- *2025.11.19* Our New paper LLM-EDT is preprinted on Arxiv, which propose a general cross-domain sequential recommender addressing the imbalance domain issue and Rough profiling Issue.
-
-- *2025.01*: &nbsp;🎉🎉 I have received the **Traval Award from AAAI'2025.**
-
-- *2024.12*: &nbsp;🎉🎉 Our paper **SIGMA: Selective Gated Mamba for Sequential Recommendation** is accepted by AAAI'2025 (**CCF-A**). Sincerely thank Bro Qidong for leading the way. 
+# 🏷️ Service
+<div class="compact-section service-grid">
+  <div>
+    <h3>Journals</h3>
+    <ul>
+      <li><strong>IEEE</strong> Transactions on Knowledge and Data Engineering (<strong>TKDE</strong>)</li>
+      <li><strong>ACM</strong> Transactions on Knowledge Discovery from Data (<strong>TKDD</strong>)</li>
+      <li><strong>ACM</strong> Transactions on Information Systems (<strong>TOIS</strong>)</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Conferences</h3>
+    <ul>
+      <li><strong>KDD 2027</strong>, ADS Track</li>
+      <li><strong>AAAI 2027</strong>, Main Track</li>
+      <li><strong>MM 2026</strong>, Main and DB Tracks</li>
+      <li><strong>SIGIR 2026</strong></li>
+      <li><strong>AAAI 2026</strong>, Main and AIA Tracks</li>
+      <li><strong>SIGIR 2025</strong></li>
+      <li><strong>RecSys 2025</strong></li>
+    </ul>
+  </div>
+</div>
 
 # 📝 First/Co-first Author Publications
 
@@ -133,21 +137,21 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 </div>
 
 # 🎖 Honors and Awards
-- *2026.06* ***SIGKDD'2026*** Student Travel Award and Volunteer.
-- *2025.01* ***AAAI'2025*** Travel Award and Volunteer.
-- *2024.12* Silver Medal in Kaggle (2024): LLM Prompt Recovery (***44/2175***). 
-- *2023.06* Excellent Graduation Project of Southeast University.
+- *2026.06* · **KDD 2026** Student Travel Award and Volunteer
+- *2025.01* · **AAAI 2025** Travel Award and Volunteer
+- *2024.12* · Silver Medal, Kaggle LLM Prompt Recovery (**44/2,175**)
+- *2023.06* · Excellent Graduation Project, Southeast University
 
-# 📖 Educations
-- *2025.09 - now*, Ph.D., Data Science, City University of Hong Kong.
-- *2023.09 - 2024.10*, M.E., Data Science, City University of Hong Kong. 
-- *2019.09 - 2023.06*, B.E., Robotics Engineering, Southeast University.
+# 📖 Education
+- *2025.09–Present* · Ph.D. in Data Science, City University of Hong Kong
+- *2023.09–2024.10* · M.E. in Data Science, City University of Hong Kong
+- *2019.09–2023.06* · B.E. in Robotics Engineering, Southeast University
 
 # 💬 Tutorial
 - *2026.08* · **KDD 2026 (CCF-A)** · [Tutorial on Generative Recommendation: Foundations and Frontiers](https://github.com/Kuaishou-RecModel/Tri-Decoupled-GenRec)
-- *2025.08* · **KDD 2025 (CCF-A)** · [Large Language Model Enhanced Recommender Systems: Taxonomy, Trend, Application and Future](https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
+- *2025.08* · **KDD 2025 (CCF-A)** · [Large Language Model Enhanced Recommender Systems: Taxonomy, Trend, Applications, and Future Directions](https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
 
 
-# 💻 Internships
-- *2024.05 - 2024.12*, Research Assistant, Chinese University of Hong Kong (Shenzhen), China.
+# 💻 Experience
+- *2024.05–2024.12* · Research Assistant, Chinese University of Hong Kong, Shenzhen
 
