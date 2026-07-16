@@ -144,8 +144,8 @@ My research interest includes Recommender Systems, Information Retrieval and LLM
 - *2019.09 - 2023.06*, B.E., Robotics Engineering, Southeast University.
 
 # 💬 Tutorial
-- *2026.08*, KDD'2026 (CCF-A), Tutorial on Generative Recommendation: Foundations and Frontiers (https://github.com/Kuaishou-RecModel/Tri-Decoupled-GenRec)
-- *2025.08*, KDD'2025 (CCF-A), Large language model enhanced recommender systems: Taxonomy, trend, application and future (https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
+- *2026.08* · **KDD 2026 (CCF-A)** · [Tutorial on Generative Recommendation: Foundations and Frontiers](https://github.com/Kuaishou-RecModel/Tri-Decoupled-GenRec)
+- *2025.08* · **KDD 2025 (CCF-A)** · [Large Language Model Enhanced Recommender Systems: Taxonomy, Trend, Application and Future](https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems)
 
 
 # 💻 Internships
