@@ -405,6 +405,39 @@ h1:before, .anchor:before {
     margin-top: 1rem;
 }
 
+.author__wechat-card {
+    background: #f8fcfa;
+    border: 1px solid #dcebe3;
+    border-radius: 12px;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    text-align: center;
+
+    img {
+        display: block;
+        height: auto;
+        margin: 0.55rem auto 0.45rem;
+        max-width: 180px;
+        width: 100%;
+    }
+}
+
+.author__wechat-heading {
+    align-items: center;
+    color: #1f7a4c;
+    display: flex;
+    font-size: 0.85rem;
+    font-weight: 700;
+    gap: 0.3rem;
+    justify-content: center;
+}
+
+.author__wechat-id {
+    color: #4b5563;
+    font-size: 0.75rem;
+    line-height: 1.35;
+}
+
 .author__cv-button {
     align-items: center;
     background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
