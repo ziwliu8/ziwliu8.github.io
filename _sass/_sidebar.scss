@@ -136,6 +136,14 @@
   font-size: $type-size-4;
 }
 
+.author__name-cn {
+  color: $gray;
+  font-family: $sans-serif;
+  font-size: $type-size-5;
+  line-height: 1.2;
+  margin: 0.35rem 0 0;
+}
+
 .author__bio {
   margin: 0;
 

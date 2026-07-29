@@ -22,6 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Ziwei Liu"
+  name_zh          : "刘子葳"
   avatar           : "images/android-chrome-512x512.png"
   bio              : "City University of Hong Kong"
   location         : "Hong Kong, China"

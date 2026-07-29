@@ -26,9 +26,15 @@
 
                     var totalCitationEle = document.getElementById("total_cit");
                     if (totalCitationEle) {
-                        totalCitationEle.textContent = data.citedby;
-                        if (data.updated) {
-                            totalCitationEle.title = "Last updated: " + data.updated;
+                        var displayedCitation = Number.parseInt(
+                            totalCitationEle.textContent,
+                            10
+                        );
+                        if (!Number.isInteger(displayedCitation) || data.citedby >= displayedCitation) {
+                            totalCitationEle.textContent = data.citedby;
+                            if (data.updated) {
+                                totalCitationEle.title = "Last updated: " + data.updated;
+                            }
                         }
                     }
 

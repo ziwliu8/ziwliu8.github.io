@@ -72,8 +72,15 @@ class VisitorWorldMap {
       await this.loadLeaflet();
     }
 
+    // Leaflet 会在容器内创建自己的图层；先移除加载占位，避免其残留在地图上方。
+    const mapContainer = document.getElementById('visitor-world-map');
+    if (!mapContainer) {
+      throw new Error('地图容器不存在');
+    }
+    mapContainer.replaceChildren();
+
     // 初始化地图
-    this.map = L.map('visitor-world-map', {
+    this.map = L.map(mapContainer, {
       center: [20, 0],
       zoom: 2,
       zoomControl: true,
@@ -113,9 +120,16 @@ class VisitorWorldMap {
   }
 
   async loadVisitorData() {
-    const data = await window.visitorTracker.trackVisit();
+    let data;
+    try {
+      data = await window.visitorTracker.trackVisit();
+      this.currentVisitCounted = data.counted === true;
+    } catch (error) {
+      console.warn('无法记录本次访问，改为读取现有统计:', error);
+      data = await window.visitorTracker.getStats();
+      this.currentVisitCounted = false;
+    }
     this.applyStatsData(data);
-    this.currentVisitCounted = data.counted === true;
   }
 
   applyStatsData(data) {
