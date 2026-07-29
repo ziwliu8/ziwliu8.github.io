@@ -1,0 +1,70 @@
+name: Generate Latest CV
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/generate_cv.yaml"
+      - "_config.yml"
+      - "_data/profile.json"
+      - "_layouts/cv.html"
+      - "_pages/about.md"
+      - "_pages/cv.md"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "images/android-chrome-512x512.png"
+  schedule:
+    - cron: "37 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-latest-cv
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Build homepage and CV
+        run: bundle exec jekyll build
+      - name: Render latest CV PDF
+        run: |
+          mkdir -p cv-output
+          python3 -m http.server 4000 --directory _site >/tmp/cv-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in 1 2 3 4 5; do
+            if curl --fail --silent http://127.0.0.1:4000/cv/ >/dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:4000/cv/ >/dev/null
+          npx --yes playwright install --with-deps chromium
+          npx --yes playwright pdf \
+            --paper-format A4 \
+            --wait-for-timeout 1000 \
+            http://127.0.0.1:4000/cv/ \
+            cv-output/Ziwei_Liu_CV.pdf
+      - name: Publish latest CV
+        working-directory: cv-output
+        run: |
+          git init
+          git config --local user.name "${GITHUB_ACTOR}"
+          git config --local user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+          git add Ziwei_Liu_CV.pdf
+          git commit -m "Update generated CV"
+          git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:cv-latest --force

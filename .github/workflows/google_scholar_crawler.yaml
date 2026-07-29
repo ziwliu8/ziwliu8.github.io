@@ -4,28 +4,49 @@ on:
   push:
     branches:
       - main
+    paths:
+      - ".github/workflows/google_scholar_crawler.yaml"
+      - "google_scholar_crawler/**"
   schedule:
-    - cron: "0 8 * * *"
+    - cron: "23 3,15 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: google-scholar-citations
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
+          cache-dependency-path: google_scholar_crawler/requirements.txt
       - name: Fetch Google Scholar citations
         working-directory: google_scholar_crawler
         env:
           GOOGLE_SCHOLAR_ID: _H3nmDQAAAAJ
         run: |
-          pip install -r requirements.txt
-          python main.py
+          python -m pip install --disable-pip-version-check -r requirements.txt
+          succeeded=false
+          for attempt in 1 2 3; do
+            echo "Citation fetch attempt ${attempt}/3"
+            if timeout 4m python main.py; then
+              succeeded=true
+              break
+            fi
+            rm -rf results
+            sleep $((attempt * 30))
+          done
+          $succeeded
+          python -m json.tool results/gs_data.json >/dev/null
       - name: Publish citation data
         working-directory: google_scholar_crawler/results
         run: |

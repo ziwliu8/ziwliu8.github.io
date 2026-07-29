@@ -1,0 +1,226 @@
+{
+  "news": [
+    {
+      "date": "2026-07-11",
+      "display_date": "2026.07.11",
+      "text_html": "One paper was accepted by <strong>RecSys 2026</strong>. Congratulations to Yuxuan!"
+    },
+    {
+      "date": "2026-06-21",
+      "display_date": "2026.06.21",
+      "text_html": "I received the <strong>KDD 2026 Student Travel Award</strong>."
+    },
+    {
+      "date": "2026-05-17",
+      "display_date": "2026.05.17",
+      "text_html": "Our tutorial, <strong>“Tutorial on Generative Recommendation: Foundations and Frontiers,”</strong> was accepted by <strong>KDD 2026</strong>. Many thanks to Xiaopeng for leading this work!"
+    },
+    {
+      "date": "2026-05-17",
+      "display_date": "2026.05.17",
+      "text_html": "Our paper <strong>H²Rec</strong> was accepted by <strong>KDD 2026 ADS Track (CCF-A)</strong>. It has been deployed on RedNote (Xiaohongshu), achieving <strong>ADVV +0.89% and COST +0.59%</strong>. Many thanks to Yejing and Qidong!"
+    },
+    {
+      "date": "2026-05-11",
+      "display_date": "2026.05.11",
+      "text_html": "Our new paper <strong>ComeIR</strong> was released on arXiv. It identifies a representation bottleneck in decoupled two-stage generative recommendation and introduces Engram memory for improved input construction and decoding."
+    },
+    {
+      "date": "2026-04-03",
+      "display_date": "2026.04.03",
+      "text_html": "Our paper <strong>LLM-EDT</strong> was accepted by <strong>SIGIR 2026 (CCF-A)</strong>. Many thanks to Qidong and Yejing!"
+    },
+    {
+      "date": "2026-01-14",
+      "display_date": "2026.01.14",
+      "text_html": "One paper was accepted by <strong>WWW 2026 (CCF-A)</strong>. Many thanks to Yejing!"
+    },
+    {
+      "date": "2025-12-11",
+      "display_date": "2025.12.11",
+      "text_html": "Our new paper <strong>H²Rec</strong> was released on arXiv. It harmonizes Semantic IDs with Hash IDs to address collaborative overwhelming."
+    },
+    {
+      "date": "2025-11-19",
+      "display_date": "2025.11.19",
+      "text_html": "Our new paper <strong>LLM-EDT</strong> was released on arXiv. It introduces a general cross-domain sequential recommender for domain imbalance and rough profiling."
+    },
+    {
+      "date": "2025-01",
+      "display_date": "2025.01",
+      "text_html": "I received the <strong>AAAI 2025 Travel Award</strong>."
+    },
+    {
+      "date": "2024-12",
+      "display_date": "2024.12",
+      "text_html": "Our paper <strong>SIGMA: Selective Gated Mamba for Sequential Recommendation</strong> was accepted by <strong>AAAI 2025 (CCF-A)</strong>. Many thanks to Qidong for leading this work!"
+    }
+  ],
+  "publications": [
+    {
+      "key": "comeir",
+      "image": "/images/publications/comeir.png",
+      "image_alt": "Overview of the ComeIR framework",
+      "caption": "ComeIR reconstructs item-aware inputs and restores token-level evidence with dual-level conditional memory.",
+      "title": "Conditional Memory Enhanced Item Representation for Generative Recommendation",
+      "short_name": "ComeIR",
+      "authors": [
+        {"name": "Ziwei Liu", "me": true, "equal": true},
+        {"name": "Yejing Wang", "equal": true},
+        {"name": "Shengyu Zhou"},
+        {"name": "Xinhang Li"},
+        {"name": "Xiangyu Zhao"}
+      ],
+      "venue": "Preprint, 2026",
+      "venue_html": "<strong>Preprint</strong>, 2026",
+      "paper_url": "https://arxiv.org/abs/2605.11447",
+      "code_url": null,
+      "code_pending": true,
+      "tldr": "ComeIR uses token scoring and dual-level Engram memories to preserve item identity and SID structure, then reuses the memories during decoding to bridge item-level inputs and token-level generation."
+    },
+    {
+      "key": "h2rec",
+      "image": "/images/publications/h2rec.png",
+      "image_alt": "Overview of the H2Rec framework",
+      "caption": "H²Rec harmonizes multi-granular Semantic IDs with unique collaborative Hash IDs through dual-branch modeling.",
+      "title": "The Best of Both Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation",
+      "short_name": "H²Rec",
+      "authors": [
+        {"name": "Ziwei Liu", "me": true, "equal": true},
+        {"name": "Yejing Wang", "equal": true},
+        {"name": "Wanyu Wang"},
+        {"name": "Zejian Wang"},
+        {"name": "Qidong Liu"},
+        {"name": "Zijian Zhang"},
+        {"name": "Wei Huang"},
+        {"name": "Chong Chen"},
+        {"name": "Xiangyu Zhao"}
+      ],
+      "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining, ADS Track (KDD), 2026 · CCF-A",
+      "venue_html": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining, ADS Track (KDD), 2026 · <strong>CCF-A</strong>",
+      "paper_url": "https://arxiv.org/abs/2512.10388",
+      "code_url": "https://github.com/Applied-Machine-Learning-Lab/KDD26_H2Rec",
+      "code_pending": false,
+      "tldr": "H²Rec combines the semantic generalization of SIDs with the collaborative uniqueness of HIDs, balancing recommendation quality for both head and long-tail items."
+    },
+    {
+      "key": "llm-edt",
+      "image": "/images/publications/llm-edt.png",
+      "image_alt": "Overview of the LLM-EDT framework",
+      "caption": "LLM-EDT couples transferable item augmentation, dual-phase training, and domain-aware user profiling.",
+      "title": "LLM-EDT: Large Language Models Enhanced Cross-domain Sequential Recommendation with Dual-phase Training",
+      "short_name": null,
+      "authors": [
+        {"name": "Ziwei Liu", "me": true, "equal": true},
+        {"name": "Qidong Liu", "equal": true},
+        {"name": "Wanyu Wang"},
+        {"name": "Yejing Wang"},
+        {"name": "Pengyue Jia"},
+        {"name": "Tong Xu"},
+        {"name": "Wei Huang"},
+        {"name": "Chong Chen"},
+        {"name": "Xiangyu Zhao"}
+      ],
+      "venue": "ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2026 · CCF-A",
+      "venue_html": "ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2026 · <strong>CCF-A</strong>",
+      "paper_url": "https://arxiv.org/abs/2511.19931",
+      "code_url": "https://github.com/Applied-Machine-Learning-Lab/SIGIR26_LLM-EDT",
+      "code_pending": false,
+      "tldr": "LLM-EDT addresses domain imbalance, noisy augmentation, and rough profiling via transferable item augmentation, domain-specific fine-tuning, and adaptive domain-aware preference aggregation."
+    },
+    {
+      "key": "sigma",
+      "image": "/images/publications/sigma.png",
+      "image_alt": "Overview of the SIGMA framework",
+      "caption": "SIGMA enhances Mamba with partial bidirectional modeling, selective gating, and short-term feature extraction.",
+      "title": "SIGMA: Selective Gated Mamba for Sequential Recommendation",
+      "short_name": null,
+      "authors": [
+        {"name": "Ziwei Liu", "me": true, "equal": true},
+        {"name": "Qidong Liu", "equal": true},
+        {"name": "Yejing Wang"},
+        {"name": "Wanyu Wang"},
+        {"name": "Pengyue Jia"},
+        {"name": "Maolin Wang"},
+        {"name": "Zitao Liu"},
+        {"name": "Yi Chang"},
+        {"name": "Xiangyu Zhao"}
+      ],
+      "venue": "AAAI Conference on Artificial Intelligence (AAAI), 2025 · CCF-A",
+      "venue_html": "AAAI Conference on Artificial Intelligence (AAAI), 2025 · <strong>CCF-A</strong>",
+      "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/33336",
+      "code_url": "https://github.com/ziwliu8/SIGMA",
+      "code_pending": false,
+      "tldr": "SIGMA equips Mamba with partially flipped bidirectional modeling, an input-dependent selective gate, and a feature-extracting GRU for efficient long- and short-term sequential recommendation."
+    }
+  ],
+  "tutorials": [
+    {
+      "date": "2026.08",
+      "venue": "KDD 2026 (CCF-A)",
+      "title": "Tutorial on Generative Recommendation: Foundations and Frontiers",
+      "url": "https://github.com/Kuaishou-RecModel/Tri-Decoupled-GenRec"
+    },
+    {
+      "date": "2025.08",
+      "venue": "KDD 2025 (CCF-A)",
+      "title": "Large Language Model Enhanced Recommender Systems: Taxonomy, Trend, Applications, and Future Directions",
+      "url": "https://github.com/liuqidong07/Awesome-LLM-Enhanced-Recommender-Systems"
+    }
+  ],
+  "honors": [
+    {"date": "2026.06", "title": "KDD 2026 Student Travel Award and Volunteer"},
+    {"date": "2025.01", "title": "AAAI 2025 Travel Award and Volunteer"},
+    {"date": "2024.12", "title": "Silver Medal, Kaggle LLM Prompt Recovery (44/2,175)"},
+    {"date": "2023.06", "title": "Excellent Graduation Project, Southeast University"}
+  ],
+  "service": [
+    {
+      "category": "Conferences",
+      "items": [
+        "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2027), ADS Track",
+        "AAAI Conference on Artificial Intelligence (AAAI 2027), Main Track",
+        "ACM International Conference on Multimedia (MM 2026), Main and DB Tracks",
+        "ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2026)",
+        "AAAI Conference on Artificial Intelligence (AAAI 2026), Main and AIA Tracks",
+        "ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2025)",
+        "ACM Conference on Recommender Systems (RecSys 2025)"
+      ]
+    },
+    {
+      "category": "Journals",
+      "items": [
+        "IEEE Transactions on Knowledge and Data Engineering (TKDE)",
+        "ACM Transactions on Knowledge Discovery from Data (TKDD)",
+        "ACM Transactions on Information Systems (TOIS)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "date": "2025.09 - Present",
+      "degree": "Ph.D. in Data Science",
+      "institution": "City University of Hong Kong",
+      "details": "Affiliation: AML Lab"
+    },
+    {
+      "date": "2023.09 - 2024.10",
+      "degree": "M.E. in Data Science",
+      "institution": "City University of Hong Kong",
+      "details": "Supervisor: Prof. Zhao Xiangyu"
+    },
+    {
+      "date": "2019.09 - 2023.06",
+      "degree": "B.E. in Robotics Engineering",
+      "institution": "Southeast University",
+      "details": "Co-supervised by Prof. Gan Yahui and Prof. Li Jun; Excellent Graduation Project"
+    }
+  ],
+  "experience": [
+    {
+      "date": "2024.05 - 2024.12",
+      "role": "Research Assistant",
+      "institution": "Chinese University of Hong Kong, Shenzhen"
+    }
+  ]
+}
