@@ -12,7 +12,7 @@ redirect_from:
 
 Currently, I am a first-year Ph.D. student in the *AML Lab* at ***City University of Hong Kong***, supervised by <a href='https://aml-cityu.github.io/'>Prof. Zhao Xiangyu</a>. Before this, I earned my Bachelor's degree in Robotics Engineering from Southeast University, where <a href='https://automation.seu.edu.cn/gyh/list.htm'><strong><em>Prof. Gan Yahui</em></strong></a> and <a href='https://automation.seu.edu.cn/lj/list.htm'><strong><em>Prof. Li Jun</em></strong></a> co-supervised me.
 
-My research interests include Recommender Systems, Information Retrieval, and Large Language Models. I have published several papers at top international AI conferences, with <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ&hl=zh-CN'><span id="total_cit" aria-live="polite">97</span> total Google Scholar citations</a>.
+My research interests include Recommender Systems, Information Retrieval, and Large Language Models. I have published several papers at top international AI conferences, with <a href='https://scholar.google.com/citations?user=_H3nmDQAAAAJ&hl=zh-CN'><span id="total_cit" aria-live="polite">103</span> total Google Scholar citations</a>.
 
 # 🔥 News
 <p class="news-scroll-hint">Latest updates · scroll for earlier news ↓</p>

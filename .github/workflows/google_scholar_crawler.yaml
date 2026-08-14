@@ -8,7 +8,7 @@ on:
       - ".github/workflows/google_scholar_crawler.yaml"
       - "google_scholar_crawler/**"
   schedule:
-    - cron: "23 3,15 * * *"
+    - cron: "17 4,16 * * *"
   workflow_dispatch:
 
 permissions:
@@ -21,33 +21,47 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 18
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: google-scholar-stats
+          path: google_scholar_crawler/previous
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
           cache-dependency-path: google_scholar_crawler/requirements.txt
       - name: Fetch Google Scholar citations
+        id: fetch
         working-directory: google_scholar_crawler
         env:
           GOOGLE_SCHOLAR_ID: _H3nmDQAAAAJ
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          PREVIOUS_STATS_PATH: previous/gs_data.json
         run: |
           python -m pip install --disable-pip-version-check -r requirements.txt
-          succeeded=false
-          for attempt in 1 2 3; do
-            echo "Citation fetch attempt ${attempt}/3"
-            if timeout 4m python main.py; then
-              succeeded=true
-              break
-            fi
-            rm -rf results
-            sleep $((attempt * 30))
-          done
-          $succeeded
+          set +e
+          python main.py
+          status=$?
+          if [ "$status" -eq 2 ]; then
+            echo "HTTP backends were blocked; trying a real browser"
+            python -m pip install --disable-pip-version-check playwright
+            python -m playwright install --with-deps chromium
+            python main.py --browser
+            status=$?
+          fi
+          set -e
+          if [ "$status" -eq 1 ]; then
+            echo "Citation fetch failed and no previous snapshot is available"
+            exit 1
+          fi
           python -m json.tool results/gs_data.json >/dev/null
+          echo "status=$status" >> "$GITHUB_OUTPUT"
       - name: Publish citation data
+        if: steps.fetch.outputs.status == '0'
         working-directory: google_scholar_crawler/results
         run: |
           git init
@@ -56,3 +70,6 @@ jobs:
           git add *.json
           git commit -m "Update citation data"
           git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:google-scholar-stats --force
+      - name: Keep previous citation snapshot
+        if: steps.fetch.outputs.status == '2'
+        run: echo "Google Scholar is still blocking GitHub Actions; the homepage will keep the last successful citation snapshot."
