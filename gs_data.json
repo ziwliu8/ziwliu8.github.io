@@ -1,0 +1,86 @@
+{
+  "scholar_id": "_H3nmDQAAAAJ",
+  "name": "Ziwei Liu",
+  "citedby": 103,
+  "citedby5y": 102,
+  "hindex": 4,
+  "hindex5y": 4,
+  "i10index": 2,
+  "i10index5y": 2,
+  "publications": {
+    "_H3nmDQAAAAJ:Tyk-4Ss8FVUC": {
+      "author_pub_id": "_H3nmDQAAAAJ:Tyk-4Ss8FVUC",
+      "bib": {
+        "title": "Conditional Memory Enhanced Item Representation for Generative Recommendation",
+        "pub_year": "2026"
+      },
+      "num_citations": 1,
+      "filled": false
+    },
+    "_H3nmDQAAAAJ:IjCSPb-OGe4C": {
+      "author_pub_id": "_H3nmDQAAAAJ:IjCSPb-OGe4C",
+      "bib": {
+        "title": "The Best of the Two Worlds: Harmonizing Semantic and Hash IDs for Sequential Recommendation",
+        "pub_year": "2025"
+      },
+      "num_citations": 4,
+      "filled": false
+    },
+    "_H3nmDQAAAAJ:qjMakFHDy7sC": {
+      "author_pub_id": "_H3nmDQAAAAJ:qjMakFHDy7sC",
+      "bib": {
+        "title": "LLM-EDT: Large Language Model Enhanced Cross-domain Sequential Recommendation with Dual-phase Training",
+        "pub_year": "2025"
+      },
+      "num_citations": 3,
+      "filled": false
+    },
+    "_H3nmDQAAAAJ:zYLM7Y9cAGgC": {
+      "author_pub_id": "_H3nmDQAAAAJ:zYLM7Y9cAGgC",
+      "bib": {
+        "title": "NEZHA: A Zero-sacrifice and Hyperspeed Decoding Architecture for Generative Recommendations",
+        "pub_year": "2025"
+      },
+      "num_citations": 16,
+      "filled": false
+    },
+    "_H3nmDQAAAAJ:d1gkVwhDpl0C": {
+      "author_pub_id": "_H3nmDQAAAAJ:d1gkVwhDpl0C",
+      "bib": {
+        "title": "SIGMA: selective gated mamba for sequential recommendation",
+        "pub_year": "2025"
+      },
+      "num_citations": 71,
+      "filled": false
+    },
+    "_H3nmDQAAAAJ:u-x6o8ySG0sC": {
+      "author_pub_id": "_H3nmDQAAAAJ:u-x6o8ySG0sC",
+      "bib": {
+        "title": "Invar-RAG: Invariant LLM-aligned retrieval for better generation",
+        "pub_year": "2024"
+      },
+      "num_citations": 8,
+      "filled": false
+    },
+    "_H3nmDQAAAAJ:W7OEmFMy1HYC": {
+      "author_pub_id": "_H3nmDQAAAAJ:W7OEmFMy1HYC",
+      "bib": {
+        "title": "Tutorial on Generative Recommendation: Foundations and Frontiers",
+        "pub_year": "2026"
+      },
+      "num_citations": 0,
+      "filled": false
+    },
+    "_H3nmDQAAAAJ:Y0pCki6q_DkC": {
+      "author_pub_id": "_H3nmDQAAAAJ:Y0pCki6q_DkC",
+      "bib": {
+        "title": "Empowering Cross-Domain Sequential Recommendation with Hybrid Tokenization and Serial-Parallel Decoding",
+        "pub_year": "2026"
+      },
+      "num_citations": 0,
+      "filled": false
+    }
+  },
+  "updated": "2026-08-28T16:39:59.622756+00:00",
+  "source": "GOOGLE_SCHOLAR_PROFILE_HTML"
+}
